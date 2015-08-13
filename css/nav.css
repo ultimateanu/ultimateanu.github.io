@@ -1,0 +1,15 @@
+/* -- MAIN NAV MENU STYLES -- */
+
+.nav-menu {
+  background: black;
+}
+
+.nav-menu a {
+    color: #1a992f;
+}
+
+.nav-menu li a:hover, .nav-menu li a:focus {
+    background: none;
+    border: none;
+    color: #3ce658;
+}
