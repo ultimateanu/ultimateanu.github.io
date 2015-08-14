@@ -1,6 +1,4 @@
-/*
- * -- MAIN NAV MENU STYLES --
- */
+/* --- MAIN NAV MENU STYLES --- */
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -15,16 +13,12 @@ body {
 }
 
 .nav-menu li a:hover, .nav-menu li a:focus {
-    background: none;
-    border: none;
-    color: #3ce658;
+  background: none;
+  border: none;
+  color: #3ce658;
 }
 
-
-/*
- * -- FOOTER --
- */
-
+/* --- FOOTER --- */
 /* TODO: make footer not override content */
 .copyright-footer {
   background-color: black;
