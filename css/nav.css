@@ -6,6 +6,7 @@ body {
 
 .nav-menu {
   background: black;
+  text-align: right;
 }
 
 .nav-menu a {
@@ -16,6 +17,10 @@ body {
   background: none;
   border: none;
   color: #3ce658;
+}
+
+.pure-menu-heading {
+  float: left;
 }
 
 /* --- FOOTER --- */
