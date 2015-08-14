@@ -1,4 +1,10 @@
-/* -- MAIN NAV MENU STYLES -- */
+/*
+ * -- MAIN NAV MENU STYLES --
+ */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
 .nav-menu {
   background: black;
@@ -14,13 +20,32 @@
     color: #3ce658;
 }
 
+
+/*
+ * -- FOOTER --
+ */
+
 /* TODO: make footer not override content */
 .copyright-footer {
   background-color: black;
   color: grey;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  height: 40px;
+}
+
+.contact-links {
+  background-color: black;
+  height: 40px;
+}
+
+.contact-icon {
   height: 30px;
+  float: right;
+  padding-top: 5px;
+  padding-right: 20px;
+  opacity: 0.5;
+}
+
+.contact-icon:hover, .contact-icon:focus {
+  opacity: 0.8;
 }
