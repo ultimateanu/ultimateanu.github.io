@@ -8,23 +8,43 @@ body {
 
 
 /* --- HEADER --- */
-.nav-menu {
-  background: black;
-  text-align: right;
+.nav-header {
+  background-color: black;
+  display: flex; display: -webkit-flex;
+  height: 60px;
+  text-transform: uppercase;
 }
 
-.nav-menu a {
-  color: #1a992f;
+.nav-header-left {
+  flex-grow: 1; -webkit-flex-grow: 1;
 }
 
-.nav-menu li a:hover, .nav-menu li a:focus {
-  background: none;
-  border: none;
-  color: #3ce658;
+.nav-header-middle {
+  flex-grow: 5; -webkit-flex-grow: 5;
+  max-width: 1000px;
+  display: flex; display: -webkit-flex;
+  justify-content: space-around; -webkit-justify-content: space-around;
+  align-items: stretch; -webkit-align-items: stretch;
 }
 
-.pure-menu-heading {
-  float: left;
+.nav-header-right {
+  flex-grow: 1; -webkit-flex-grow: 1;
+}
+
+.nav-link {
+  flex-grow: 1; -webkit-flex-grow: 1;
+  display: flex; display: -webkit-flex;
+  justify-content: space-around; -webkit-justify-content: space-around;
+  align-items: center; -webkit-align-items: center;
+  color: #D0D0D0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  transition: color ease-out .25s;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #379408;
 }
 
 
@@ -39,15 +59,18 @@ body {
 
 #my-name {
   font-family: 'Open Sans', sans-serif;
-  font-size: 80px;
+  font-size: 100px;
+  margin: 20px;
 }
 
 #first-name {
   font-weight: 600;
+  color: #282828;
 }
 
 #last-name {
   font-weight: 300;
+  color: #484848;
 }
 
 
@@ -98,6 +121,22 @@ footer {
 
 /* --- Screens < 650px --- */
 @media (max-width:650px) {
+  .nav-header {
+    height: 240px; /* Should be (nav-header height * num elements)*/
+  }
+
+  .nav-header-left, .nav-header-right {
+    display: none;
+  }
+
+  .nav-header-middle {
+    flex-direction: column; -webkit-flex-direction: column;
+  }
+
+  #my-name {
+    font-size: 60px;
+  }
+
   footer {
     flex-direction: column-reverse; -webkit-flex-direction: column-reverse;
     height: 120px;
