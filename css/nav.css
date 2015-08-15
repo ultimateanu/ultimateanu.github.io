@@ -2,6 +2,13 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main {
+  flex-grow: 1;
 }
 
 .nav-menu {
@@ -24,27 +31,58 @@ body {
 }
 
 /* --- FOOTER --- */
-/* TODO: make footer not override content */
-.copyright-footer {
+footer {
+  display: flex;
+  height: 60px;
   background-color: black;
   color: grey;
-  width: 100%;
-  height: 40px;
+  font-family: 'Hind';
 }
 
-.contact-links {
-  background-color: black;
-  height: 40px;
+#footer-left {
+  min-width: 200px;
 }
 
-.contact-icon {
-  height: 30px;
-  float: right;
-  padding-top: 5px;
-  padding-right: 20px;
+#footer-middle {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 200px;
+}
+
+/* TODO: Can I remove this and keep the icons square? */
+.social-link {
+  max-height: 30px;
+}
+
+.social-icon {
+  max-height: 30px;
   opacity: 0.5;
 }
 
-.contact-icon:hover, .contact-icon:focus {
+.social-icon:hover, .social-icon:focus {
   opacity: 0.8;
+}
+
+/* --- Screens < 650px --- */
+@media (max-width:650px) {
+  footer {
+    flex-direction: column-reverse;
+    height: 120px;
+  }
+
+  #footer-left {
+    display: none;
+  }
+
+  #footer-right {
+    flex-grow: 2;
+  }
 }
