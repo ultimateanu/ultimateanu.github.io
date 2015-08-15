@@ -12,7 +12,7 @@ body {
   background-color: black;
   display: flex; display: -webkit-flex;
   height: 60px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .nav-header-left {
