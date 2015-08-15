@@ -1,3 +1,7 @@
+Website
+add email link at bottom
+eventually add github link at bottom
+
 Web Projects
 genetic program to make image using shapes
 acro graph
