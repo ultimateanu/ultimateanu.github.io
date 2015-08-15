@@ -1,4 +1,5 @@
 Website
+add alternative flexflow for nav links on small screens
 add email link at bottom
 eventually add github link at bottom
 
