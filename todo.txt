@@ -1,6 +1,6 @@
 Website
 add alternative flexflow for nav links on small screens
-add email link at bottom
+make svg icons for ig and linkedin
 eventually add github link at bottom
 
 Web Projects
