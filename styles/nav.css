@@ -11,27 +11,21 @@ body {
 .nav-header {
   background-color: black;
   display: flex; display: -webkit-flex;
-  height: 60px;
-  text-transform: lowercase;
-}
-
-.nav-header-left {
-  flex-grow: 1; -webkit-flex-grow: 1;
+  justify-content: center; -webkit-justify-content: center;
 }
 
 .nav-header-middle {
-  flex-grow: 6; -webkit-flex-grow: 6;
+  flex-grow: 1; -webkit-flex-grow: 1;
   max-width: 1000px;
   display: flex; display: -webkit-flex;
   justify-content: space-around; -webkit-justify-content: space-around;
   align-items: stretch; -webkit-align-items: stretch;
-}
-
-.nav-header-right {
-  flex-grow: 1; -webkit-flex-grow: 1;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
 }
 
 .nav-link {
+  height: 60px;
+  min-width: 150px; /* NOTE: This is (mobile width / num links) */
   flex-grow: 1; -webkit-flex-grow: 1;
   display: flex; display: -webkit-flex;
   justify-content: space-around; -webkit-justify-content: space-around;
@@ -101,20 +95,8 @@ footer {
 
 
 
-/* --- Screens < 650px --- */
-@media (max-width:650px) {
-  .nav-header {
-    height: 240px; /* Should be (nav-header height * num elements)*/
-  }
-
-  .nav-header-left, .nav-header-right {
-    display: none;
-  }
-
-  .nav-header-middle {
-    flex-direction: column; -webkit-flex-direction: column;
-  }
-
+/* --- Screens < 600px --- */
+@media (max-width:600px) {
   #my-name {
     font-size: 60px;
   }
