@@ -79,9 +79,10 @@ footer {
 
 #footer-right {
   display: flex; display: -webkit-flex;
-  justify-content: space-around; -webkit-justify-content: space-around;
+  justify-content: space-between; -webkit-justify-content: space-between;
   align-items: center; -webkit-align-items: center;
-  min-width: 200px;
+  min-width: 120px;
+  margin: 0 15px;
 }
 
 /* TODO: Can I remove this and keep the icons square? */
@@ -129,5 +130,7 @@ footer {
 
   #footer-right {
     flex-grow: 2; -webkit-flex-grow: 2;
+    justify-content: space-around; -webkit-justify-content: space-around;
+    margin: 0;
   }
 }
