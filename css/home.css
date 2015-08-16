@@ -1,0 +1,22 @@
+/* --- MAIN --- */
+#main {
+  display: flex; display: -webkit-flex;
+  justify-content: center; -webkit-justify-content: center;
+  align-items: center; -webkit-align-items: center;
+}
+
+#my-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100px;
+  margin: 20px;
+}
+
+#first-name {
+  font-weight: 600;
+  color: #282828;
+}
+
+#last-name {
+  font-weight: 300;
+  color: #484848;
+}
