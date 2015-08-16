@@ -1,0 +1,65 @@
+#main {
+  display: flex; display: -webkit-flex;
+  justify-content: center; -webkit-justify-content: center;
+  align-items: center; -webkit-align-items: center;
+}
+
+/* TODO: Find out why this is not working in safari */
+#course-list {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+
+  display: flex; display: -webkit-flex;
+  justify-content: center; -webkit-justify-content: center;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  align-items: center; -webkit-align-items: center;
+}
+
+#course-list li {
+  width:100%;
+  max-width:400px;
+  margin: 20px;
+}
+
+.course {
+  width:100%;
+  height:0;
+  background-size:100% 100%;
+  padding-bottom:75%;
+  border: 2px solid #202020;
+}
+
+.course:hover, .course:focus{
+  border: 2px solid #379408;
+}
+
+.course:hover > .course-name, .course:focus > .course-name{
+  display: none;
+}
+
+.course-name {
+  margin: 0px;
+  text-align: center;
+  color: white;
+}
+
+/* --- COURSE SPECIFICS --- */
+#greek-myth {
+  background-image: url(../images/parthenon.jpg);
+}
+#greek-myth:hover, #greek-myth:focus {
+  background-image: url(../images/cert_greek_myth.png);
+}
+#spark-big-data {
+  background-image: url(../images/spark_big_data.png);
+}
+#spark-big-data:hover, #spark-big-data:focus {
+  background-image: url(../images/cert_spark_big_data.png);
+}
+#spark-ml {
+  background-image: url(../images/spark_ml.png);
+}
+#spark-ml:hover, #spark-ml:focus {
+  background-image: url(../images/cert_spark_ml.png);
+}
