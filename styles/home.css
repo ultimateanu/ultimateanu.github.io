@@ -20,3 +20,9 @@
   font-weight: 300;
   color: #484848;
 }
+
+@media (max-width:600px) {
+  #my-name {
+    font-size: 60px;
+  }
+}
