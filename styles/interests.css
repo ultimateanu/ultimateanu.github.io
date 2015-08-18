@@ -87,6 +87,7 @@ h1 {
   display: flex; display: -webkit-flex;
 }
 
+/* TODO: make border-right 1px solid see through */
 .course-weblink {
   width: 50%;
   height: 100%;
@@ -118,6 +119,6 @@ h1 {
   }
 }
 
-/* TODO resize course images to proper aspect ratio
-- make certs images have border on their own
+/*
+TODO make certs images have border on their own
 */
