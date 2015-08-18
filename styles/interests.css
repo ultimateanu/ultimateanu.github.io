@@ -4,7 +4,7 @@
 }
 
 #content {
-  flex-grow: 1;
+  flex-grow: 1; -webkit-flex-grow: 1;
   max-width: 80%;
 }
 
@@ -20,21 +20,20 @@ h1 {
   font-size: 16px;
 }
 
-#cl {
+#course-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+  display: flex; display: -webkit-flex;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  justify-content: center; -webkit-justify-content: center;
 }
 
 .course {
   position: relative;
   background-color: black;
-  flex-basis: 300px;
-  flex-grow: 1;
+  flex-basis: 300px; -webkit-flex-basis: 300px;
+  flex-grow: 1; -webkit-flex-grow: 1;
 }
 
 .course:hover > .course-bg-img{
@@ -85,7 +84,7 @@ h1 {
   display: none;
 }
 .course:hover > .course-links{
-  display: flex;
+  display: flex; display: -webkit-flex;
 }
 
 .course-weblink {
@@ -115,11 +114,10 @@ h1 {
   }
 
   .course-links{
-    display: flex;
+    display: flex; display: -webkit-flex;
   }
 }
 
 /* TODO resize course images to proper aspect ratio
--fix safari and mobile
 - make certs images have border on their own
 */
