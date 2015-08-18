@@ -1,73 +1,123 @@
 #main {
   display: flex; display: -webkit-flex;
   justify-content: center; -webkit-justify-content: center;
-  align-items: center; -webkit-align-items: center;
 }
 
-/* TODO: Find out why this is not working in safari */
-#course-list {
+#content {
+  flex-grow: 1;
+  max-width: 80%;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#cl {
   list-style: none;
   padding: 0;
-  width: 90%;
-
-  display: flex; display: -webkit-flex;
-  justify-content: center; -webkit-justify-content: center;
-  flex-wrap: wrap; -webkit-flex-wrap: wrap;
-  align-items: center; -webkit-align-items: center;
-}
-
-#course-list li {
-  width:100%;
-  max-width:300px;
-  margin: 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .course {
-  width:100%;
-  height:0;
-  background-size:100% 100%;
-  padding-bottom:75%;
-  border: 2px solid #202020;
-  background-color: #888888;
-  background-blend-mode: multiply;
+  position: relative;
+  background-color: black;
+  flex-basis: 300px;
+  flex-grow: 1;
 }
 
-.course:hover, .course:focus{
-  border: 2px solid #379408;
-  background-blend-mode: normal;
-}
-
-.course:hover > .course-name, .course:focus > .course-name{
+.course:hover > .course-bg-img{
   display: none;
 }
 
-.course-name {
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  margin-top: 24px;
+.course-bg-img {
+  width: 100%;
+  opacity: 0.4;
+  display: block;
 }
 
-/* --- COURSE SPECIFICS --- */
-#greek-myth {
-  background-image: url(../images/parthenon.jpg);
+.course-cert-img {
+  width: 100%;
+  display: none;
 }
-#greek-myth:hover, #greek-myth:focus {
-  background-image: url(../images/cert_greek_myth.png);
+.course:hover > .course-cert-img{
+  display: block;
+  border: 1px solid grey;
 }
-#spark-big-data {
-  background-image: url(../images/spark_big_data.png);
+
+.course-name {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  /* TODO: change font size dynamically */
+  /* TODO: change text postion dynamically */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  margin-top: 24px;
 }
-#spark-big-data:hover, #spark-big-data:focus {
-  background-image: url(../images/cert_spark_big_data.png);
+.course:hover > .course-name{
+  display: none;
 }
-#spark-ml {
-  background-image: url(../images/spark_ml.png);
+
+.course-links {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+  display: none;
 }
-#spark-ml:hover, #spark-ml:focus {
-  background-image: url(../images/cert_spark_ml.png);
+.course:hover > .course-links{
+  display: flex;
 }
+
+.course-weblink {
+  width: 50%;
+  display: flex; display: -webkit-flex;
+  justify-content: center; -webkit-justify-content: center;
+  align-items: center; -webkit-align-items: center;
+}
+.course:hover > .course-weblink{
+  display: flex; display: -webkit-flex;
+}
+
+.course-info-icon {
+  height: 50%;
+}
+
+/* --- Screens < 600px --- */
+@media (max-width:600px) {
+  #content {
+    max-width: 100%;
+    background-color: light red;
+  }
+
+  .course-bg-img {
+    opacity: .8;
+  }
+
+  .course-links{
+    display: flex;
+  }
+}
+
+/* TODO resize course images to proper aspect ratio */
+/* fix for chrome and safari and mobile */
