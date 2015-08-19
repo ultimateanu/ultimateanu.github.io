@@ -1,7 +1,9 @@
 Website
-add alternative flexflow for nav links on small screens
+update courses ui for mobile
 make svg icons for ig and linkedin
 eventually add github link at bottom
+make home icon
+make favicon
 
 Web Projects
 genetic program to make image using shapes
