@@ -1,14 +1,12 @@
 /* --- MAIN --- */
 #main {
-  display: flex; display: -webkit-flex;
-  justify-content: center; -webkit-justify-content: center;
-  align-items: center; -webkit-align-items: center;
+  text-align: center;
 }
 
 #my-name {
   font-family: 'Open Sans', sans-serif;
   font-size: 100px;
-  margin: 20px;
+  margin-top: 25vh;
 }
 
 #first-name {
