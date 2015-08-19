@@ -36,7 +36,7 @@ h1 {
   flex-grow: 1; -webkit-flex-grow: 1;
 }
 
-.course:hover > .course-bg-img{
+.course:hover > .course-bg-img, .course:focus > .course-bg-img{
   display: none;
 }
 
@@ -50,7 +50,7 @@ h1 {
   width: 100%;
   display: none;
 }
-.course:hover > .course-cert-img{
+.course:hover > .course-cert-img, .course:focus > .course-cert-img{
   display: block;
 }
 
@@ -70,7 +70,7 @@ h1 {
   text-shadow: 2px 2px 3px black;
   margin-top: 24px;
 }
-.course:hover > .course-name{
+.course:hover > .course-name, .course:focus > .course-name{
   display: none;
 }
 
@@ -85,7 +85,7 @@ h1 {
   display: flex; display: -webkit-flex;
   visibility: hidden;
 }
-.course:hover > .course-links{
+.course:hover > .course-links, .course:focus > .course-links{
   visibility: visible;
 }
 
@@ -96,7 +96,7 @@ h1 {
   justify-content: center; -webkit-justify-content: center;
   align-items: center; -webkit-align-items: center;
 }
-.course:hover > .course-weblink{
+.course:hover > .course-weblink, .course:focus > .course-weblink{
   display: flex; display: -webkit-flex;
 }
 
