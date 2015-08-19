@@ -1,4 +1,5 @@
 -Website
+make webpage title (Projects | Anu Bandi)
 make certs images have border on their own
 update courses ui for mobile
 make svg icons for ig and linkedin
