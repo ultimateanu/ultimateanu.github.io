@@ -3,7 +3,7 @@ body {
   display: flex; display: -webkit-flex;
   flex-direction: column; -webkit-flex-direction: column;
   min-height: 100vh;
-  background-image: url(../images/bg_square.png)
+  background-image: url(../images/bg_square.png)  /* Background pattern from subtlepatterns.com */
 }
 
 
