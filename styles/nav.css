@@ -3,6 +3,7 @@ body {
   display: flex; display: -webkit-flex;
   flex-direction: column; -webkit-flex-direction: column;
   min-height: 100vh;
+  background-image: url(../images/bg_square.png)
 }
 
 
@@ -10,6 +11,7 @@ body {
 /* --- HEADER --- */
 .nav-header {
   background-color: black;
+  opacity: .75;
   display: flex; display: -webkit-flex;
   justify-content: center; -webkit-justify-content: center;
 }
@@ -30,15 +32,14 @@ body {
   display: flex; display: -webkit-flex;
   justify-content: space-around; -webkit-justify-content: space-around;
   align-items: center; -webkit-align-items: center;
-  color: #D0D0D0;
+  color: #E8E8E8;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   transition: color ease-out .25s;
 }
-
 .nav-link:hover, .nav-link:focus, .nav-link-current {
-  color: #379408;
+  color: #007500;
 }
 
 
