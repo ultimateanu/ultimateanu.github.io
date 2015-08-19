@@ -6,24 +6,28 @@
 #content {
   flex-grow: 1; -webkit-flex-grow: 1;
   max-width: 1000px;
+  margin: 0 10px;
+  color: #202020;
 }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 40px;
+  margin: 60px 0 10px 0;
 }
 
 .text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  margin: 0;
 }
 
 #course-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0 0;
   display: flex; display: -webkit-flex;
   flex-wrap: wrap; -webkit-flex-wrap: wrap;
   justify-content: center; -webkit-justify-content: center;
@@ -111,8 +115,11 @@ h1 {
 /* --- Screens < 600px --- */
 @media (max-width:600px) {
   #content {
-    max-width: 100%;
-    background-color: light red;
+    margin: 0;
+  }
+
+  .text-block {
+    padding: 0 10px;
   }
 
   .course-bg-img {
