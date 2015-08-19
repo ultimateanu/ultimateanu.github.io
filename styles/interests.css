@@ -75,19 +75,20 @@ h1 {
 }
 
 .course-links {
+  max-height: 50px;
   height: 30%;
   width: 100%;
   position: absolute;
   bottom: 0;
   background-color: black;
   opacity: 0.6;
-  display: none;
+  display: flex; display: -webkit-flex;
+  visibility: hidden;
 }
 .course:hover > .course-links{
-  display: flex; display: -webkit-flex;
+  visibility: visible;
 }
 
-/* TODO: make border-right 1px solid see through */
 .course-weblink {
   width: 50%;
   height: 100%;
@@ -99,8 +100,12 @@ h1 {
   display: flex; display: -webkit-flex;
 }
 
+.course-weblink-left {
+  border-right: 1px solid white;
+}
+
 .course-info-icon {
-  height: 60%;
+  height: 75%;
 }
 
 /* --- Screens < 600px --- */
@@ -115,10 +120,6 @@ h1 {
   }
 
   .course-links{
-    display: flex; display: -webkit-flex;
+    visibility: visible;
   }
 }
-
-/*
-TODO make certs images have border on their own
-*/
