@@ -2,6 +2,7 @@
 @import 'flexbox';
 
 
+
 body {
   margin: 0;
   @include display-flex;
@@ -71,7 +72,6 @@ footer {
 
 #footer-middle {
   @include flex-grow(1);
-
   @include display-flex;
   @include justify-content(center);
   @include align-items(center);
@@ -79,24 +79,21 @@ footer {
 
 #footer-right {
   @include display-flex;
-  justify-content: space-between; -webkit-justify-content: space-between;
-  align-items: center; -webkit-align-items: center;
+  @include justify-content(space-between);
+  @include align-items(center);
   min-width: 120px;
   margin: 0 15px;
 }
 
-/* TODO: Can I remove this and keep the icons square? */
-.social-link {
-  max-height: 30px;
-}
-
+// TODO: consider adding transition
 .social-icon {
+  display: block;
   max-height: 30px;
   opacity: 0.5;
-}
 
-.social-icon:hover, .social-icon:focus {
-  opacity: 0.8;
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
 }
 
 
@@ -113,8 +110,8 @@ footer {
   }
 
   #footer-right {
-    flex-grow: 2; -webkit-flex-grow: 2;
-    justify-content: space-around; -webkit-justify-content: space-around;
+    @include flex-grow(2);
+    @include justify-content(space-around);
     margin: 0;
   }
 }
