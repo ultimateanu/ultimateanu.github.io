@@ -1,0 +1,120 @@
+@import 'constants';
+@import 'flexbox';
+
+
+body {
+  margin: 0;
+  @include display-flex;
+  @include flex-direction(column);
+  min-height: 100vh;
+  background-image: url(../images/bg_square.png)  /* Background pattern from subtlepatterns.com */
+}
+
+
+
+/* --- HEADER --- */
+.nav-header {
+  background-color: black;
+  opacity: .75;
+  @include display-flex;
+  justify-content: center; -webkit-justify-content: center;
+}
+
+.nav-header-middle {
+  @include flex-grow(1);
+  max-width: $content-width;
+  display: flex; display: -webkit-flex;
+  justify-content: space-around; -webkit-justify-content: space-around;
+  align-items: stretch; -webkit-align-items: stretch;
+  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+}
+
+.nav-link {
+  height: 60px;
+  flex-basis: 150px; -webkit-flex-basis: 150px;
+  flex-grow: 1; -webkit-flex-grow: 1;
+  display: flex; display: -webkit-flex;
+  justify-content: space-around; -webkit-justify-content: space-around;
+  align-items: center; -webkit-align-items: center;
+  color: #E8E8E8;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  transition: color ease-out .25s;
+}
+.nav-link:hover, .nav-link:focus, .nav-link-current {
+  color: $accent-color;
+}
+
+
+
+/* --- MAIN --- */
+#main {
+  @include flex-grow(1);
+}
+
+
+
+/* --- FOOTER --- */
+footer {
+  @include display-flex;
+  height: 60px;
+  background-color: black;
+  color: grey;
+  font-family: 'Hind';
+  font-weight: 300;
+}
+
+#footer-left {
+  min-width: 200px;
+}
+
+#footer-middle {
+  @include flex-grow(1);
+
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+#footer-right {
+  @include display-flex;
+  justify-content: space-between; -webkit-justify-content: space-between;
+  align-items: center; -webkit-align-items: center;
+  min-width: 120px;
+  margin: 0 15px;
+}
+
+/* TODO: Can I remove this and keep the icons square? */
+.social-link {
+  max-height: 30px;
+}
+
+.social-icon {
+  max-height: 30px;
+  opacity: 0.5;
+}
+
+.social-icon:hover, .social-icon:focus {
+  opacity: 0.8;
+}
+
+
+
+/* --- Screens < 600px --- */
+@media (max-width:600px) {
+  footer {
+    flex-direction: column-reverse; -webkit-flex-direction: column-reverse;
+    height: 120px;
+  }
+
+  #footer-left {
+    display: none;
+  }
+
+  #footer-right {
+    flex-grow: 2; -webkit-flex-grow: 2;
+    justify-content: space-around; -webkit-justify-content: space-around;
+    margin: 0;
+  }
+}

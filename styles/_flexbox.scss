@@ -1,0 +1,28 @@
+/* --- CONTAINER --- */
+@mixin display-flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+}
+
+@mixin justify-content($alignment) {
+  justify-content: $alignment;
+  -webkit-justify-content: $alignment;
+}
+
+@mixin align-items($alignment) {
+  align-items: $alignment;
+  -webkit-align-items: $alignment;
+}
+
+
+
+/* --- ITEM --- */
+@mixin flex-grow($n) {
+  flex-grow: $n;
+  -webkit-flex-grow: $n;
+}
