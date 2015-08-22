@@ -90,13 +90,10 @@ h1 {
 }
 
 .course-links {
-  max-height: 50px;
-  height: 30%;
+  height: 40px;
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: black;
-  opacity: .6;
   @include display-flex;
   visibility: hidden;
 }
@@ -104,19 +101,19 @@ h1 {
   visibility: visible;
 }
 
+.divider-space {
+  min-width: 1px;
+}
+
 .course-weblink {
-  height: 100%;
-  width: 50%;
+  @include flex-grow(1);
+  background-color: black;
+  opacity: .6;
   @include flex-center-children;
 }
 
-// TODO: use transparent center instead
-.course-weblink-left {
-  border-right: 1px solid #fff;
-}
-
 .course-info-icon {
-  height: 75%;
+  height: 30px;
 }
 
 hr {
