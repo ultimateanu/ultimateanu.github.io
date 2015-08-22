@@ -31,3 +31,8 @@
   flex-grow: $n;
   -webkit-flex-grow: $n;
 }
+
+@mixin flex-basis($val) {
+  flex-basis: $val;
+  -webkit-flex-basis: $val;
+}
