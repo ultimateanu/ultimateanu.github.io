@@ -144,7 +144,8 @@ hr {
   }
 
   .course-bg-img {
-    //filter: none;
+    -webkit-filter: none;
+    filter: none;
     opacity: .8;
   }
 
