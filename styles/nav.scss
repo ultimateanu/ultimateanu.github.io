@@ -6,19 +6,19 @@
 body {
   @include display-flex;
   @include flex-direction(column);
+  background-image: url('../images/bg_square.png');  /* Background pattern from subtlepatterns.com */
   margin: 0;
   min-height: 100vh;
-  background-image: url(../images/bg_square.png)  /* Background pattern from subtlepatterns.com */
 }
 
 
 
-/* --- HEADER --- */
+// --- HEADER ---
 .nav-header {
   @include display-flex;
   @include justify-content(center);
+  background-color: rgba(0, 0, 0, .75);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .nav-header-middle {
@@ -50,21 +50,21 @@ body {
 
 
 
-/* --- MAIN --- */
+// --- MAIN ---
 #main {
   @include flex-grow(1);
 }
 
 
 
-/* --- FOOTER --- */
+// --- FOOTER ---
 footer {
   @include display-flex;
-  height: 60px;
   background-color: black;
   color: grey;
   font-family: 'Hind';
   font-weight: 300;
+  height: 60px;
 }
 
 #footer-left {
@@ -82,27 +82,27 @@ footer {
   @include display-flex;
   @include justify-content(space-between);
   @include align-items(center);
-  min-width: 120px;
   margin: 0 15px;
+  min-width: 120px;
 }
 
 .social-icon {
   display: block;
   max-height: 30px;
-  opacity: 0.5;
+  opacity: .5;
   transition: opacity ease-in-out .2s;
 
   &:hover, &:focus {
-    opacity: 0.8;
+    opacity: .8;
   }
 }
 
 
 
-/* --- Screens < 600px --- */
+// --- Screens < 600px ---
 @media (max-width:600px) {
   footer {
-    flex-direction: column-reverse; -webkit-flex-direction: column-reverse;
+    @include flex-direction(column-reverse);
     height: 120px;
   }
 
