@@ -32,8 +32,7 @@ h1 {
 
 #course-list {
   list-style: none;
-  padding: 0;
-  margin: 0 (-$my-margin/2);
+  margin: 0 -1px;
   @include display-flex;
   @include flex-wrap(wrap);
   @include justify-content(space-between);
@@ -43,7 +42,7 @@ h1 {
   background-color: black;
   flex-basis: 200px; -webkit-flex-basis: 200px;
   flex-grow: 1; -webkit-flex-grow: 1;
-  margin: 5px;
+  margin: 1px;
   position: relative;
 }
 
@@ -135,7 +134,6 @@ hr {
 
   #course-list {
     margin: 20px 0;
-    //@include flex-direction(column);
   }
 
   .course {
