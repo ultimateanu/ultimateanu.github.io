@@ -9,6 +9,11 @@
   -webkit-flex-direction: $direction;
 }
 
+@mixin flex-wrap($style) {
+  flex-wrap: $style;
+  -webkit-flex-wrap: $style;
+}
+
 @mixin justify-content($alignment) {
   justify-content: $alignment;
   -webkit-justify-content: $alignment;
