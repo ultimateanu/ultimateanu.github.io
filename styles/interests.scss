@@ -40,8 +40,8 @@ h1 {
 
 .course {
   background-color: black;
-  flex-basis: 200px; -webkit-flex-basis: 200px;
-  flex-grow: 1; -webkit-flex-grow: 1;
+  @include flex-basis(200px);
+  @include flex-grow(1);
   margin: 1px;
   position: relative;
 }
@@ -67,24 +67,26 @@ h1 {
 }
 
 .course-name {
-  height: 70%;
+  height: 50%;
   width: 100%;
   position: absolute;
   top: 0;
-
-  // TODO: change font size dynamically
-  // TODO: change text postion dynamically
-  // TODO: fix text padding
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 22px;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 3px black;
-  margin-top: 24px;
+  @include flex-center-children;
 }
 .course:hover > .course-name, .course:focus > .course-name{
   display: none;
+}
+
+// TODO: change font size dynamically
+.course-name-text {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0 $my-margin;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  line-height: 125%;
 }
 
 .course-links {
@@ -95,7 +97,7 @@ h1 {
   bottom: 0;
   background-color: black;
   opacity: .6;
-  display: flex; display: -webkit-flex;
+  @include display-flex;
   visibility: hidden;
 }
 .course:hover > .course-links, .course:focus > .course-links{
@@ -108,6 +110,7 @@ h1 {
   @include flex-center-children;
 }
 
+// TODO: use transparent center instead
 .course-weblink-left {
   border-right: 1px solid #fff;
 }
