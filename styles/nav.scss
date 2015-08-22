@@ -72,9 +72,7 @@ footer {
 
 #footer-middle {
   @include flex-grow(1);
-  @include display-flex;
-  @include justify-content(center);
-  @include align-items(center);
+  @include flex-center-children;
 }
 
 #footer-right {

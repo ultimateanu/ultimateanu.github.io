@@ -3,8 +3,8 @@
 
 
 #main {
-  display: flex; display: -webkit-flex;
-  justify-content: center; -webkit-justify-content: center;
+  @include display-flex;
+  @include justify-content(center);
 }
 
 #content {
@@ -34,8 +34,8 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0 (-$my-margin/2);
-  display: flex; display: -webkit-flex;
-  flex-wrap: wrap; -webkit-flex-wrap: wrap;
+  @include display-flex;
+  @include flex-wrap(wrap);
   @include justify-content(space-between);
 }
 
@@ -55,6 +55,8 @@ h1 {
   opacity: .4;
   display: block;
   width: 100%;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .course-cert-img {
@@ -71,8 +73,8 @@ h1 {
   position: absolute;
   top: 0;
 
-  /* TODO: change font size dynamically */
-  /* TODO: change text postion dynamically */
+  // TODO: change font size dynamically
+  // TODO: change text postion dynamically
   // TODO: fix text padding
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -102,11 +104,9 @@ h1 {
 }
 
 .course-weblink {
-  width: 50%;
   height: 100%;
-  display: flex; display: -webkit-flex;
-  justify-content: center; -webkit-justify-content: center;
-  align-items: center; -webkit-align-items: center;
+  width: 50%;
+  @include flex-center-children;
 }
 
 .course-weblink-left {
@@ -135,14 +135,16 @@ hr {
 
   #course-list {
     margin: 20px 0;
+    //@include flex-direction(column);
   }
 
   .course {
-    margin: 0;
+    margin: 10px 0;
     @include flex-basis(100%);
   }
 
   .course-bg-img {
+    //filter: none;
     opacity: .8;
   }
 

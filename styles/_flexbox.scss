@@ -1,4 +1,4 @@
-/* --- CONTAINER --- */
+// --- CONTAINER ---
 @mixin display-flex {
   display: flex;
   display: -webkit-flex;
@@ -26,7 +26,7 @@
 
 
 
-/* --- ITEMS --- */
+// --- ITEMS ---
 @mixin flex-grow($n) {
   flex-grow: $n;
   -webkit-flex-grow: $n;
@@ -35,4 +35,13 @@
 @mixin flex-basis($val) {
   flex-basis: $val;
   -webkit-flex-basis: $val;
+}
+
+
+
+// Simple Properties
+@mixin flex-center-children {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
 }
