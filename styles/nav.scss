@@ -16,7 +16,7 @@ body {
 .nav-header {
   @include display-flex;
   @include justify-content(center);
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .7);
   text-align: center;
 }
 

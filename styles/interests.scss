@@ -90,14 +90,15 @@ h1 {
 }
 
 .course-links {
-  height: 40px;
+  height: 30%;
   width: 100%;
+  max-height: 50px;
   position: absolute;
   bottom: 0;
   @include display-flex;
   visibility: hidden;
 }
-.course:hover > .course-links, .course:focus > .course-links{
+.course:hover > .course-links, .course:focus > .course-links {
   visibility: visible;
 }
 
@@ -107,13 +108,31 @@ h1 {
 
 .course-weblink {
   @include flex-grow(1);
+  height: 100%;
   background-color: black;
   opacity: .6;
-  @include flex-center-children;
 }
 
-.course-info-icon {
-  height: 30px;
+$icon-height: 75%;
+%icon-ext {
+  height: $icon-height;
+  width: 100%;
+  position: relative;
+  top: (100% - $icon-height)/2;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-icon {
+  @extend %icon-ext;
+  background-image: url("../images/info_icon_w.png");
+}
+
+.grad-icon {
+  @extend %icon-ext;
+  background-image: url("../images/grad_cap.png");
 }
 
 hr {
