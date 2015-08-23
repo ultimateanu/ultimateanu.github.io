@@ -5,7 +5,7 @@
 body {
   @include display-flex;
   @include flex-direction(column);
-  background-image: url('../images/bg_square.png');  /* Background pattern from subtlepatterns.com */
+  background-image: url('../images/bg_square.png');  // Background pattern from subtlepatterns.com
   margin: 0;
   min-height: 100vh;
 }
@@ -16,7 +16,7 @@ body {
 .nav-header {
   @include display-flex;
   @include justify-content(center);
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .7);
   text-align: center;
 }
 
