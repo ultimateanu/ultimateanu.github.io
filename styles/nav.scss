@@ -52,6 +52,14 @@ body {
 // --- MAIN ---
 #main {
   @include flex-grow(1);
+  @include display-flex;
+  @include justify-content(center);
+}
+
+#content {
+  color: $text-color-dark;
+  margin: 0 $my-margin;
+  max-width: $content-width;
 }
 
 
