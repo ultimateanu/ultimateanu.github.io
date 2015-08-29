@@ -1,7 +1,5 @@
 Remaining Work
 ==============
-- sass --style compressed --sourcemap=none --watch .
-- add common.css
 - make svg icons for ig and linkedin
 - eventually add github link at bottom
 - make home icon, favicon
