@@ -124,6 +124,10 @@ footer {
 
 // --- Screens < 600px ---
 @media (max-width:600px) {
+  .nav-link-color-bar {
+    display: none;
+  }
+
   footer {
     @include flex-direction(column-reverse);
     height: 120px;
