@@ -29,22 +29,40 @@ body {
   max-width: $content-width;
 }
 
-.nav-link {
+%nav-link {
   height: 44px;
-  flex-basis: 150px; -webkit-flex-basis: 150px;
-  flex-grow: 1; -webkit-flex-grow: 1;
-  display: flex; display: -webkit-flex;
-  justify-content: space-around; -webkit-justify-content: space-around;
-  align-items: center; -webkit-align-items: center;
-  color: #E8E8E8;
+  @include flex-basis(150px);
+  @include flex-grow(1);
+  @include flex-center-children;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 300;
   transition: color ease-out .25s;
+  position: relative;
 }
-.nav-link:hover, .nav-link:focus, .nav-link-current {
+
+.nav-link-other {
+  @extend %nav-link;
+  color: #E8E8E8;
+
+  &:hover, &:focus {
+    color: #989898;
+  }
+}
+
+.nav-link-current  {
+  @extend %nav-link;
   color: $accent-color;
+
+  .nav-link-color-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: $accent-color;
+  }
 }
 
 
