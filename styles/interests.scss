@@ -46,7 +46,10 @@ h1 {
   position: relative;
 }
 
-.course:hover > .course-bg-img, .course:focus > .course-bg-img{
+.course:hover > .course-bg-img, .course:focus > .course-bg-img {
+  display: none;
+}
+.course-name:focus > .course-bg-img {
   display: none;
 }
 
@@ -62,7 +65,10 @@ h1 {
   display: none;
   width: 100%;
 }
-.course:hover > .course-cert-img, .course:focus > .course-cert-img{
+.course:hover > .course-cert-img, .course:focus > .course-cert-img {
+  display: block;
+}
+.course-name:focus > .course-cert-img {
   display: block;
 }
 
@@ -73,7 +79,10 @@ h1 {
   top: 0;
   @include flex-center-children;
 }
-.course:hover > .course-name, .course:focus > .course-name{
+.course:hover > .course-name, .course:focus > .course-name {
+  display: none;
+}
+.course-name:focus > .course-name {
   display: none;
 }
 
@@ -98,6 +107,9 @@ h1 {
   visibility: hidden;
 }
 .course:hover > .course-links, .course:focus > .course-links {
+  visibility: visible;
+}
+.course-name:focus > .course-links {
   visibility: visible;
 }
 
