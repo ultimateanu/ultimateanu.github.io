@@ -1,8 +1,14 @@
 Remaining Work
 ==============
-- make svg icons for ig and linkedin
+- finish resume section
+- make courses images clickable on mobile safari
 - eventually add github link at bottom
 - make home icon, favicon
+
+
+Bugs
+====
+- find out why menu text changes position for 'interest' on safari and chrome
 
 Web Project Ideas
 =================
