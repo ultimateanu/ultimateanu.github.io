@@ -8,7 +8,6 @@ Remaining Work
 
 Bugs
 ====
-- find out why menu text changes position for 'interest' on safari and chrome
 
 Web Project Ideas
 =================
