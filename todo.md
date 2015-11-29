@@ -4,6 +4,7 @@ Remaining Work
 - make courses images clickable on mobile safari
 - eventually add github link at bottom
 - make home icon, favicon
+- maybe use font: GalaxiePolaris-Light
 
 
 Bugs
