@@ -35,12 +35,12 @@ h1 {
   margin: 0 -1px;
   @include display-flex;
   @include flex-wrap(wrap);
-  @include justify-content(space-between);
+  @include justify-content(center);
 }
 
 .course {
   background-color: black;
-  @include flex-basis(200px);
+  @include flex-basis(300px);
   @include flex-grow(1);
   margin: 1px;
   position: relative;
