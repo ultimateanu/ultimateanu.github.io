@@ -1,5 +1,8 @@
 @import 'constants';
 
+.home-page {
+  background-color: #2B2B39;    
+}
 
 $side-img-margin: 20px;
 #side-pic {
@@ -19,12 +22,12 @@ $side-img-margin: 20px;
 
 #first-name {
   font-weight: 600;
-  color: #282828;
+  color: #E8E8E8;
 }
 
 #last-name {
   font-weight: 300;
-  color: #484848;
+  color: #B0B0B0;
 }
 
 @media (max-width:600px) {
