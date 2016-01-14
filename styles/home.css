@@ -1,26 +1,2 @@
-/* --- MAIN --- */
-#main {
-  text-align: center;
-}
-
-#my-name {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100px;
-  margin-top: 25vh;
-}
-
-#first-name {
-  font-weight: 600;
-  color: #282828;
-}
-
-#last-name {
-  font-weight: 300;
-  color: #484848;
-}
-
-@media (max-width:600px) {
-  #my-name {
-    font-size: 60px;
-  }
-}
+#side-pic{height:100%;position:absolute;bottom:0;right:0;margin-right:20px}#my-name{font-family:'Open Sans', sans-serif;font-size:100px;margin-top:25vh;margin-left:5px}#first-name{font-weight:600;color:#282828}#last-name{font-weight:300;color:#484848}@media (max-width: 600px){#my-name{font-size:60px}}
+/*# sourceMappingURL=home.css.map */

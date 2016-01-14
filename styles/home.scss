@@ -1,0 +1,34 @@
+@import 'constants';
+
+
+$side-img-margin: 20px;
+#side-pic {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: $side-img-margin;
+}
+
+#my-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100px;
+  margin-top: 25vh;
+  margin-left: $side-img-margin - $content-padding;
+}
+
+#first-name {
+  font-weight: 600;
+  color: #282828;
+}
+
+#last-name {
+  font-weight: 300;
+  color: #484848;
+}
+
+@media (max-width:600px) {
+  #my-name {
+    font-size: 60px;
+  }
+}

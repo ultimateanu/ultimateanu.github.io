@@ -75,6 +75,13 @@ body {
   @include justify-content(center);
 }
 
+// TODO: maybe merge this with #content later
+#page-content {
+  width: $content-width;
+  padding: 0 $content-padding;
+  position: relative;
+}
+
 #content {
   color: $text-color-dark;
   margin: 0 $my-margin;
