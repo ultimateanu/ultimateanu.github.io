@@ -17,7 +17,7 @@ body {
 .nav-header {
   @include display-flex;
   @include justify-content(center);
-  background-color: rgba(0, 0, 0, .7);
+  background-color: #fafafa;
   text-align: center;
 }
 
@@ -37,8 +37,8 @@ body {
   @include flex-center-children;
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   transition: color ease-out .25s;
   position: relative;
@@ -46,8 +46,8 @@ body {
 
 .nav-link-other {
   @extend %nav-link;
-  color: #E8E8E8;
-
+  color: $primary-color-med;
+  
   &:hover, &:focus {
     color: #989898;
   }
