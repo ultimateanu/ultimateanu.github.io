@@ -17,7 +17,7 @@ body {
 .nav-header {
   @include display-flex;
   @include justify-content(center);
-  background-color: #fafafa;
+  background-color: $grey-light;
   text-align: center;
 }
 
@@ -39,8 +39,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  text-transform: uppercase;
-  transition: color ease-out .25s;
   position: relative;
 }
 
@@ -49,7 +47,8 @@ body {
   color: $primary-color-med;
   
   &:hover, &:focus {
-    color: #989898;
+    color: $grey-light;
+    background-color: $accent-color-med;
   }
 }
 
@@ -63,7 +62,7 @@ body {
     left: 0;
     height: 10%;
     width: 100%;
-    background-color: $accent-color;
+    background-color: $accent-color-med;
   }
 }
 
