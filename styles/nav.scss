@@ -14,11 +14,20 @@ body {
 }
 
 // --- HEADER ---
-.nav-header {
+%nav-header {
   @include display-flex;
   @include justify-content(center);
-  background-color: $grey-light;
   text-align: center;
+}
+
+.nav-header-light {
+  @extend %nav-header;
+  background-color: $grey-light;
+}
+
+.nav-header-dark {
+  @extend %nav-header;
+  background-color: $primary-color-med;
 }
 
 .nav-header-middle {
@@ -40,22 +49,11 @@ body {
   font-size: 20px;
   font-weight: 400;
   position: relative;
-}
-
-.nav-link-other {
-  @extend %nav-link;
-  color: $primary-color-med;
   
   &:hover, &:focus {
-    color: $grey-light;
     background-color: $accent-color-med;
   }
-}
-
-.nav-link-current  {
-  @extend %nav-link;
-  color: $accent-color;
-
+  
   .nav-link-color-bar {
     position: absolute;
     top: 0;
@@ -64,6 +62,20 @@ body {
     width: 100%;
     background-color: $accent-color-med;
   }
+}
+
+.nav-link-light {
+  @extend %nav-link;
+  color: $primary-color-med;
+  
+  &:hover, &:focus {
+    color: $grey-light;
+  }
+}
+
+.nav-link-dark {
+  @extend %nav-link;
+  color: white;
 }
 
 
