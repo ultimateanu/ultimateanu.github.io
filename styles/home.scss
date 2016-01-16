@@ -22,12 +22,12 @@ $side-img-margin: 20px;
 
 #first-name {
   font-weight: 600;
-  color: #ff5722;
+  color: $accent-color-med;
 }
 
 #last-name {
   font-weight: 300;
-  color: #e64a19;
+  color: $accent-color-dark;
 }
 
 @media (max-width:600px) {
