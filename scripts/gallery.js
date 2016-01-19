@@ -1,32 +1,30 @@
 
+
 var openPhotoSwipe = function () {
+    // dynamically figure out image properties
+    var parseGalleryElements = function (gallery) {
+        var items = [];
+        for (var i = 0; i < gallery.children.length; i++) {
+            var image = gallery.children[i].children[0];
+            var item = {
+                src: image.getAttribute('src'),
+                w: image.naturalWidth,
+                h: image.naturalHeight,
+            };
+            items.push(item);
+        }
+        return items;
+    };
+
     var pswpElement = document.querySelectorAll('.pswp')[0];
-
-    // build items array
-    var items = [
-        {
-            msrc: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-            src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-            w: 1024,
-            h: 683
-        },
-        {
-            msrc: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
-            src: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
-            w: 964,
-            h: 1024
-        },
-
-    ];
-    
-    // define options (if needed)
+    var galleryElement = document.getElementById("acro-gallery");
+    var items = parseGalleryElements(galleryElement);
     var options = {
-        bgOpacity: .9,
+        bgOpacity: 1,
         showHideOpacity: true,  // fade in image
         preload: [1, 3],        // preload 1 previous img and 3 next
         shareEl: false,         // disable share button
     };
-
     var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
     gallery.init();
 };
