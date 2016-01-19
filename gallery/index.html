@@ -40,25 +40,25 @@
 
         <!--button id="btn">Open PhotoSwipe</button-->
 
-        <div id="mygallery">
-            <a href="path/to/myimage1_original.jpg">
-                <img alt="Title 1" src="../images/acro/IMG_3142.JPG" />
-            </a>
-            <a href="path/to/myimage2_original.jpg">
-                <img alt="Title 2" src="../images/acro/IMG_3230.JPG" />
-            </a>
-            <a href="path/to/myimage1_original.jpg">
-                <img alt="Title 1" src="../images/acro/IMG_3276.JPG" />
-            </a>
-            <a href="path/to/myimage2_original.jpg">
-                <img alt="Title 2" src="../images/acro/IMG_3515.JPG" />
-            </a>
-            <a href="path/to/myimage1_original.jpg">
-                <img alt="Title 1" src="../images/acro/IMG_4077.JPG" />
-            </a>
-            <a href="path/to/myimage2_original.jpg">
-                <img alt="Title 2" src="../images/acro/IMG_4228.JPG" />
-            </a>
+        <div id="acro-gallery">
+            <div>
+                <img src="../images/acro/IMG_3142.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_3230.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_3276.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_3515.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_4077.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_4228.JPG" />
+            </div>
         </div>
 
     </div>
@@ -117,8 +117,9 @@
         </div>
     </div>
 
+    <!-- TODO: move this to seperate file -->
     <script>
-        $("#mygallery").justifiedGallery({
+        $("#acro-gallery").justifiedGallery({
         rowHeight : 300,
         margins: 0,
         captions: false,
