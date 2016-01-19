@@ -87,6 +87,10 @@ body {
   @include justify-content(center);
 }
 
+#gallery {
+  @include flex-grow(1);
+}
+
 // TODO: maybe merge this with #content later
 #page-content {
   width: $content-width;

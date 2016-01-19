@@ -1,99 +1,130 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400%7COpen+Sans:400,300,600%7CHind:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href='../styles/reset.css'/>
-  <link rel="stylesheet" href='../styles/nav.css'/>
-  <link rel="stylesheet" href='../styles/gallery.css'/>
-  <script type="text/javascript" src="../scripts/gallery.js" defer></script> 
-  <!-- photoswipe -->
-  <link rel="stylesheet" href="../scripts/photoswipe/photoswipe.css"> 
-  <link rel="stylesheet" href="../scripts/photoswipe/default-skin/default-skin.css"> 
-  <script type="text/javascript" src="../scripts/photoswipe/photoswipe.min.js" async></script> 
-  <script type="text/javascript" src="../scripts/photoswipe/photoswipe-ui-default.min.js" async></script> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gallery | Anu Bandi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- public -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400%7COpen+Sans:400,300,600%7CHind:400,300' rel='stylesheet'
+    type='text/css'>
+    <link rel="stylesheet" href='../styles/reset.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- photoswipe -->
+    <link rel="stylesheet" href="../scripts/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="../scripts/photoswipe/default-skin/default-skin.css">
+    <script type="text/javascript" src="../scripts/photoswipe/photoswipe.min.js" async></script>
+    <script type="text/javascript" src="../scripts/photoswipe/photoswipe-ui-default.min.js" async></script>
+    <!-- justified gallery -->
+    <link rel="stylesheet" href="../scripts/justified_gallery/justifiedGallery.min.css" />
+    <script type="text/javascript" src="../scripts/justified_gallery/jquery.justifiedGallery.min.js"></script>
+    <!-- custom -->
+    <title>Gallery | Anu Bandi</title>
+    <link rel="stylesheet" href='../styles/nav.css' />
+    <link rel="stylesheet" href='../styles/gallery.css' />
+    <script type="text/javascript" src="../scripts/gallery.js" defer></script>
 </head>
 
 <body id="tile-bg">
-  <header class="nav-header-dark">
-    <nav class="nav-header-middle">
-      <a href="/interests" class="nav-link-dark">INTERESTS</a>
-      <a href="/gallery" class="nav-link-dark">
-        <div class="nav-link-color-bar"></div>GALLERY
-      </a>
-      <a href="/projects" class="nav-link-dark">PROJECTS</a>
-      <a href="/resume" class="nav-link-dark">RESUME</a>
-    </nav>
-  </header>
+    <header class="nav-header-dark">
+        <nav class="nav-header-middle">
+            <a href="/interests" class="nav-link-dark">INTERESTS</a>
+            <a href="/gallery" class="nav-link-dark">
+                <div class="nav-link-color-bar"></div>GALLERY
+            </a>
+            <a href="/projects" class="nav-link-dark">PROJECTS</a>
+            <a href="/resume" class="nav-link-dark">RESUME</a>
+        </nav>
+    </header>
 
-  <div id="main"><div id="content">
+    <div id="gallery">
 
-    <div style="width:100%">
-      Under construction...
-      <br><br>
-      <button id="btn">Open PhotoSwipe</button>
-      <br>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      <br><br><br>
-    </div>
+        <!--button id="btn">Open PhotoSwipe</button-->
 
-  </div></div>
-
-  <footer>
-    <div id="footer-left"></div>
-    <div id="footer-middle">
-      © Anu Bandi 2015
-    </div>
-    <div id="footer-right">
-      <a class="social-link" href="mailto:anu@ultimateanu.com">
-        <img class="social-icon" src="../images/icon_email.svg" alt="email icon"/>
-      </a>
-      <a class="social-link" href="https://www.linkedin.com/in/ultimateanu">
-        <img class="social-icon" src="../images/icon_linkedin.svg" alt="linkedin icon"/>
-      </a>
-      <a class="social-link" href="https://instagram.com/anubandi/">
-        <img class="social-icon" src="../images/icon_instagram.svg" alt="instagram icon"/>
-      </a>
-    </div>
-  </footer>
-
-<!-- Root element of PhotoSwipe-->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="pswp__bg"></div>
-    <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
+        <div id="mygallery">
+            <a href="path/to/myimage1_original.jpg">
+                <img alt="Title 1" src="../images/acro/IMG_3142.JPG" />
+            </a>
+            <a href="path/to/myimage2_original.jpg">
+                <img alt="Title 2" src="../images/acro/IMG_3230.JPG" />
+            </a>
+            <a href="path/to/myimage1_original.jpg">
+                <img alt="Title 1" src="../images/acro/IMG_3276.JPG" />
+            </a>
+            <a href="path/to/myimage2_original.jpg">
+                <img alt="Title 2" src="../images/acro/IMG_3515.JPG" />
+            </a>
+            <a href="path/to/myimage1_original.jpg">
+                <img alt="Title 1" src="../images/acro/IMG_4077.JPG" />
+            </a>
+            <a href="path/to/myimage2_original.jpg">
+                <img alt="Title 2" src="../images/acro/IMG_4228.JPG" />
+            </a>
         </div>
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
+
+    </div>
+
+    <footer>
+        <div id="footer-left"></div>
+        <div id="footer-middle">
+            © Anu Bandi 2015
+        </div>
+        <div id="footer-right">
+            <a class="social-link" href="mailto:anu@ultimateanu.com">
+                <img class="social-icon" src="../images/icon_email.svg" alt="email icon" />
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/ultimateanu">
+                <img class="social-icon" src="../images/icon_linkedin.svg" alt="linkedin icon" />
+            </a>
+            <a class="social-link" href="https://instagram.com/anubandi/">
+                <img class="social-icon" src="../images/icon_instagram.svg" alt="instagram icon" />
+            </a>
+        </div>
+    </footer>
+
+    <!-- Root element of PhotoSwipe-->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <script>
+        $("#mygallery").justifiedGallery({
+        rowHeight : 300,
+        margins: 0,
+        captions: false,
+    });
+    </script>
 
 </body>
+
 </html>
