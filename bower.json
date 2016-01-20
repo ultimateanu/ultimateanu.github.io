@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "justifiedGallery": "justified-gallery#~3.6.1"
+    "justifiedGallery": "justified-gallery#~3.6.1",
+    "photoswipe": "~4.1.1"
   }
 }
