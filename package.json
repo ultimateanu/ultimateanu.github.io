@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ultimateanu/ultimateanu.github.io#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.1.1"
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }
