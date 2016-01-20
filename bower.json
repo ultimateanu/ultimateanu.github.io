@@ -1,0 +1,22 @@
+{
+  "name": "ultimateanu.github.io",
+  "homepage": "https://github.com/ultimateanu/ultimateanu.github.io",
+  "authors": [
+    "Anu Bandi <ultimateanu@gmail.com>"
+  ],
+  "description": "Personal website",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "justifiedGallery": "justified-gallery#~3.6.1"
+  }
+}
