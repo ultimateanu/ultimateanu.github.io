@@ -24,8 +24,9 @@ gulp.task('browser-sync', function () {
 
 // Watch tasks
 gulp.task('watch', function () {
-    gulp.watch('./styles/**/*.scss', ['sass']);
+    gulp.watch('./scripts/*.js').on('change', browserSync.reload);
     gulp.watch('./**/*.html').on('change', browserSync.reload);
+    gulp.watch('./styles/**/*.scss', ['sass']);
 });
 
 // Default task
