@@ -37,10 +37,31 @@
     </header>
 
     <div id="gallery">
-
-        <button id="btn">Open PhotoSwipe</button>
-
         <div id="acro-gallery">
+            <div>
+                <img src="../images/acro/IMG_3142.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_3230.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_3276.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_3515.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_4077.JPG" />
+            </div>
+            <div>
+                <img src="../images/acro/IMG_4228.JPG" />
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="travel-gallery">
             <div>
                 <img src="../images/acro/IMG_3142.JPG" />
             </div>
@@ -121,6 +142,11 @@
     <script>
         $("#acro-gallery").justifiedGallery({
         rowHeight : 300,
+        margins: 0,
+        captions: false,
+    });
+            $("#travel-gallery").justifiedGallery({
+        rowHeight : 100,
         margins: 0,
         captions: false,
     });
