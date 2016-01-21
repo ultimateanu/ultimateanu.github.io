@@ -1,5 +1,5 @@
-
 var prepareGallery = function (galleryName) {
+    // TODO: update this as layout changes
     var parseGalleryElements = function (gallery) {
         var items = [];
         for (var i = 0; i < gallery.children.length; i++) {
