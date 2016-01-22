@@ -140,13 +140,15 @@
 
     <!-- TODO: move this to seperate file -->
     <script>
+        // TODO: maybe change this on rotation
+        var rowHeight = Math.floor((15/100.0)*screen.availHeight);
         $("#acro-gallery").justifiedGallery({
-        rowHeight : 200,
+        rowHeight : rowHeight,
         margins: 0,
         captions: false,
     });
     $("#travel-gallery").justifiedGallery({
-        rowHeight : 150,
+        rowHeight : rowHeight,
         margins: 0,
         captions: false,
     });
