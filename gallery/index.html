@@ -150,8 +150,11 @@
 
     <!-- TODO: move this to seperate file -->
     <script>
-        // TODO: maybe change this on rotation
-        var rowHeight = Math.floor((15/100.0)*screen.availHeight);
+        // TODO: update this on rotation
+        var pHeight = 20;
+        var minHeight = 150;
+        var rowHeight = Math.max(minHeight,Math.floor((pHeight/100.0)*screen.availHeight));
+        
         $("#acro-gallery").justifiedGallery({
         rowHeight : rowHeight,
         margins: 0,
