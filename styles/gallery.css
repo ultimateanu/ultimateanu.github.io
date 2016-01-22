@@ -1,36 +1,21 @@
-.home-page {
-  background-color: #263238;
+.gallery-container {
+  background: yellow;
+  display: flex;
 }
 
-#side-pic {
-  height: 95%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 20px;
+.gallery-name {
+  background: red;
 }
 
-#my-name {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100px;
-  margin-top: 25vh;
-  margin-left: 5px;
+.gallery-content {
+  background: blue;
+  flex-grow: 1;
 }
 
-#first-name {
-  font-weight: 600;
-  color: #f57c00;
-}
-
-#last-name {
-  font-weight: 300;
-  color: #ef6c00;
-}
-
-@media (max-width: 600px) {
-  #my-name {
-    font-size: 60px;
-  }
+.gallery-seperator {
+  border-width: 10px;
+  border-color: green;
+  margin: 0;
 }
 
 /*# sourceMappingURL=maps/gallery.css.map */

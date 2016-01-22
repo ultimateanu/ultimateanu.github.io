@@ -1,37 +1,22 @@
 @import 'constants';
 
-.home-page {
-  background-color: $primary-color-dark;    
+
+.gallery-container {
+    background: yellow;
+    display: flex;
 }
 
-$side-img-margin: 20px;
-#side-pic {
-    height: 95%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: $side-img-margin;
+.gallery-name {
+    background: red;
 }
 
-#my-name {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100px;
-  margin-top: 25vh;
-  margin-left: $side-img-margin - $content-padding;
+.gallery-content {
+    background: blue;
+    flex-grow: 1;
 }
 
-#first-name {
-  font-weight: 600;
-  color: $accent-color-med;
-}
-
-#last-name {
-  font-weight: 300;
-  color: $accent-color-dark;
-}
-
-@media (max-width:600px) {
-  #my-name {
-    font-size: 60px;
-  }
+.gallery-seperator {
+    border-width: 10px;
+    border-color: green;
+    margin: 0;
 }
