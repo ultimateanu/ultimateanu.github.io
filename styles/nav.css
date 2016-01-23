@@ -97,6 +97,7 @@ body {
 #gallery {
   flex-grow: 1;
   -webkit-flex-grow: 1;
+  background-color: black;
 }
 
 #page-content {

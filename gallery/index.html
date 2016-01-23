@@ -39,7 +39,11 @@
     <div id="gallery">
 
         <div class="gallery-container">
-            <div class="gallery-name">acro</div>
+            <div class="gallery-name">a
+                <br> c
+                <br> r
+                <br> o
+            </div>
             <div class="gallery-content">
                 <div id="acro-gallery">
                     <div>
@@ -63,8 +67,6 @@
                 </div>
             </div>
         </div>
-
-        <hr class="gallery-seperator">
 
         <div class="gallery-container">
             <div class="gallery-name"> travel </div>
@@ -151,18 +153,18 @@
     <!-- TODO: move this to seperate file -->
     <script>
         // TODO: update this on rotation
-        var pHeight = 20;
+        var pHeight = 15;
         var minHeight = 150;
         var rowHeight = Math.max(minHeight,Math.floor((pHeight/100.0)*screen.availHeight));
         
         $("#acro-gallery").justifiedGallery({
         rowHeight : rowHeight,
-        margins: 0,
+        margins: 3,
         captions: false,
     });
     $("#travel-gallery").justifiedGallery({
         rowHeight : rowHeight,
-        margins: 0,
+        margins: 3,
         captions: false,
     });
     </script>

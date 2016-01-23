@@ -89,6 +89,7 @@ body {
 
 #gallery {
   @include flex-grow(1);
+  background-color: black;
 }
 
 // TODO: maybe merge this with #content later

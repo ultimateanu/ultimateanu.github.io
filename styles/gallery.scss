@@ -2,16 +2,18 @@
 
 
 .gallery-container {
-    background: yellow;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .gallery-name {
-    background: red;
+    color: #757575;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    padding: 0 10px;
 }
 
 .gallery-content {
-    background: blue;
     flex-grow: 1;
 }
 
@@ -19,4 +21,12 @@
     border-width: 10px;
     border-color: green;
     margin: 0;
+    display: none;
+}
+
+// --- Screens < 600px ---
+@media (max-width:600px) {
+    .gallery-container {
+        flex-direction: column;
+    }
 }
