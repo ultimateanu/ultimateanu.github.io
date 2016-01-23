@@ -1,7 +1,7 @@
 .gallery-container {
   display: flex;
   display: -webkit-flex;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .gallery-name {
@@ -28,6 +28,8 @@
   .gallery-container {
     flex-direction: column;
     -webkit-flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 30px;
   }
   .gallery-name {
     width: auto;
