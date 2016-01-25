@@ -27,7 +27,7 @@ var prepareGallery = function (galleryName) {
         var options = {
             index: parseInt(e.target.dataset.index),
             getThumbBoundsFn: getStartPos,
-            bgOpacity: 1,
+            bgOpacity: .85,
             preload: [1, 3],        // preload 1 previous img and 3 next
             shareEl: false,         // disable share button
         };
