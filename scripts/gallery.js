@@ -53,7 +53,6 @@ var prepareGallery = function (galleryName, numImages) {
 
         var innerContent = document.createElement('div');
         innerContent.className = 'jgallery';
-        innerContent.setAttribute('id', 'smith');
         content.appendChild(innerContent);
         for (var i = 1; i <= numImages; i++) {
             var image = document.createElement('img');
