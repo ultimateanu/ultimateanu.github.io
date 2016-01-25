@@ -44,9 +44,20 @@ var prepareGallery = function (galleryName) {
     }
 }
 
+var makeJustifiedGallery = function () {
+    var pHeight = 15;
+    var minHeight = 150;
+    var rowHeight = Math.max(minHeight, Math.floor((pHeight / 100.0) * screen.availHeight));
+    $('.jgallery').justifiedGallery({
+        rowHeight: rowHeight,
+        margins: 3,
+        captions: false,
+    });
+}
+
 function pageFullyLoaded(e) {
+    makeJustifiedGallery();
     prepareGallery('acro-gallery');
     prepareGallery('travel-gallery');
 }
-
 window.addEventListener("load", pageFullyLoaded, false);

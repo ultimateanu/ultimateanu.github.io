@@ -43,7 +43,7 @@
                 <div class="rot">acro</div>
             </div>
             <div class="gallery-content">
-                <div id="acro-gallery">
+                <div class="jgallery" id="acro-gallery">
                     <div>
                         <img src="../images/acro/IMG_3142.JPG" />
                     </div>
@@ -68,7 +68,7 @@
                 <div class="rot">travel</div>
             </div>
             <div class="gallery-content">
-                <div id="travel-gallery">
+                <div class="jgallery" id="travel-gallery">
                     <div>
                         <img src="../images/acro/IMG_3142.JPG" />
                     </div>
@@ -143,26 +143,6 @@
             </div>
         </div>
     </div>
-
-    <!-- TODO: move this to seperate file -->
-    <script>
-        // TODO: update this on rotation
-        var pHeight = 15;
-        var minHeight = 150;
-        var rowHeight = Math.max(minHeight,Math.floor((pHeight/100.0)*screen.availHeight));
-        
-        $("#acro-gallery").justifiedGallery({
-        rowHeight : rowHeight,
-        margins: 3,
-        captions: false,
-    });
-    $("#travel-gallery").justifiedGallery({
-        rowHeight : rowHeight,
-        margins: 3,
-        captions: false,
-    });
-    </script>
-
 </body>
 
 </html>
