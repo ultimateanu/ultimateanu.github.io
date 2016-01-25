@@ -1,4 +1,4 @@
-var prepareGallery = function (galleryName) {
+var prepareGallery = function (galleryName, numImages) {
     // TODO: update this as layout changes
     var parseGalleryElements = function (gallery) {
         var items = [];
@@ -35,6 +35,53 @@ var prepareGallery = function (galleryName) {
         psGallery.init();
     };
 
+    var createElem = function (type, className, innerText) {
+        var elem = document.createElement(type);
+        elem.className = className;
+
+        if (innerText) {
+            var text = document.createTextNode(innerText);
+            elem.appendChild(text)
+        }
+        return elem;
+    }
+
+    var populateGallery = function () {
+
+
+        var container = createElem('div', 'gallery-container');
+
+        var name = createElem('div', 'gallery-name');
+        var rot = createElem('div', 'rot', galleryName);
+
+        var content = createElem('div', 'gallery-content');
+
+        var innerContent = document.createElement('div');
+        innerContent.setAttribute('id', 'smith');
+        content.appendChild(innerContent);
+        for (var i = 1; i <= numImages; i++) {
+            var image = document.createElement('img');
+            image.src = '../images/gallery/' + galleryName + '/' + i + '.jpg';
+
+            var d = document.createElement('div');
+            d.appendChild(image);
+            innerContent.appendChild(d);
+        }
+
+
+        name.appendChild(rot);
+
+        container.appendChild(name);
+        container.appendChild(content);
+
+
+
+        document.getElementById("gallery").appendChild(container);
+
+    }
+
+    populateGallery();
+
     var gallery = document.getElementById(galleryName)
     var galleryItems;
     for (var i = 0; i < gallery.children.length; i++) {
@@ -45,8 +92,9 @@ var prepareGallery = function (galleryName) {
 }
 
 function pageFullyLoaded(e) {
-    prepareGallery('acro-gallery');
-    prepareGallery('travel-gallery');
+    //prepareGallery('acro-gallery');
+    //prepareGallery('travel-gallery');
+    prepareGallery('korea', 5);
 }
 
 window.addEventListener("load", pageFullyLoaded, false);

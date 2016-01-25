@@ -21,7 +21,7 @@
     <title>Gallery | Anu Bandi</title>
     <link rel="stylesheet" href='../styles/nav.css' />
     <link rel="stylesheet" href='../styles/gallery.css' />
-    <script type="text/javascript" src="../scripts/gallery.js" defer></script>
+    <!--script type="text/javascript" src="../scripts/gallery.js" defer></script-->
 </head>
 
 <body id="tile-bg">
@@ -37,28 +37,26 @@
     </header>
 
     <div id="gallery">
+        
 
-        <div class="gallery-container">
+
+
+        <!--div class="gallery-container">
             <div class="gallery-name">
                 <div class="rot">acro</div>
             </div>
             <div class="gallery-content">
                 <div id="acro-gallery">
                     <div>
-                        <img src="../images/acro/IMG_3142.JPG" />
+
                     </div>
                     <div>
+                    <picture style="height: 50px; width: 200px;">
+                        <source srcset="../images/acro/IMG_3230.JPG">
                         <img src="../images/acro/IMG_3230.JPG" />
+                    </picture>
                     </div>
-                    <div>
-                        <img src="../images/acro/IMG_4077.JPG" />
-                    </div>
-                    <div>
-                        <img src="../images/acro/IMG_3515.JPG" />
-                    </div>
-                    <div>
-                        <img src="../images/acro/IMG_4228.JPG" />
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -86,7 +84,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
 
     </div>
 
@@ -145,13 +143,22 @@
     </div>
 
     <!-- TODO: move this to seperate file -->
+        <script type="text/javascript" src="../scripts/gallery.js"></script>
     <script>
         // TODO: update this on rotation
         var pHeight = 15;
         var minHeight = 150;
         var rowHeight = Math.max(minHeight,Math.floor((pHeight/100.0)*screen.availHeight));
         
+                $("#smith").justifiedGallery({
+            selector : '> picture, > div:not(.spinner)',
+        rowHeight : rowHeight,
+        margins: 3,
+        captions: false,
+    });
+        
         $("#acro-gallery").justifiedGallery({
+            selector : '> picture, > div:not(.spinner)',
         rowHeight : rowHeight,
         margins: 3,
         captions: false,
