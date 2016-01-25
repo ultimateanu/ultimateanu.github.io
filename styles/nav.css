@@ -112,14 +112,21 @@ body {
   max-width: 960px;
 }
 
-footer {
+#footer-dark, #footer-light {
   display: flex;
   display: -webkit-flex;
-  background-color: black;
   color: grey;
   font-family: 'Hind';
   font-weight: 300;
   height: 60px;
+}
+
+#footer-dark {
+  background-color: #212121;
+}
+
+#footer-light {
+  background-color: #F5F5F5;
 }
 
 #footer-left {
@@ -148,22 +155,27 @@ footer {
   min-width: 120px;
 }
 
-.social-icon {
+.social-icon, .social-icon-black {
   display: block;
   max-height: 30px;
   opacity: .5;
   transition: opacity ease-in-out .2s;
 }
 
-.social-icon:hover, .social-icon:focus {
+.social-icon:hover, .social-icon-black:hover, .social-icon:focus, .social-icon-black:focus {
   opacity: .8;
+}
+
+.social-icon-black {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 @media (max-width: 600px) {
   .nav-link-color-bar {
     display: none;
   }
-  footer {
+  #footer-dark, #footer-light {
     flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
     height: 120px;

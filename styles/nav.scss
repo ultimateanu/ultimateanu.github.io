@@ -1,5 +1,6 @@
 @import 'constants';
 @import 'flexbox';
+@import 'utils';
 
 
 body {
@@ -108,13 +109,22 @@ body {
 
 
 // --- FOOTER ---
-footer {
+%footer-base {
   @include display-flex;
-  background-color: black;
   color: grey;
   font-family: 'Hind';
   font-weight: 300;
   height: 60px;
+}
+
+#footer-dark {
+  @extend %footer-base;  
+  background-color: $off-black;
+}
+
+#footer-light {
+  @extend %footer-base;
+  background-color: $off-white;
 }
 
 #footer-left {
@@ -145,6 +155,10 @@ footer {
   }
 }
 
+.social-icon-black {
+  @extend .social-icon;  
+  @include filter(invert(100%));
+}
 
 
 // --- Screens < 600px ---
@@ -153,7 +167,7 @@ footer {
     display: none;
   }
 
-  footer {
+  %footer-base {
     @include flex-direction(column-reverse);
     height: 120px;
   }
