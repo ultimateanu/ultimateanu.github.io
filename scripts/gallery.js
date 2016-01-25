@@ -90,9 +90,9 @@ var makeJustifiedGallery = function () {
     });
 }
 
-function myPageFullyLoaded(e) {
+function htmlFullyLoaded(e) {
     prepareGallery('acro', 6);
     prepareGallery('korea', 5);
     makeJustifiedGallery();
 }
-window.addEventListener("load", myPageFullyLoaded, false);
+window.addEventListener("load", htmlFullyLoaded, false);
