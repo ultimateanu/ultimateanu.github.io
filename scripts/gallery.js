@@ -90,6 +90,7 @@ var makeJustifiedGallery = function () {
     });
 }
 
+// TODO: update on mobile rotation
 function htmlFullyLoaded(e) {
     prepareGallery('acro', 6);
     prepareGallery('korea', 5);
