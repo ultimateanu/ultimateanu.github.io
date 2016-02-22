@@ -1,7 +1,38 @@
+#main {
+  background-color: grey;
+}
+
 #content {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3em;
+  color: #263238;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.exp {
+  list-style-type: none;
+}
+
+.exp-job {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.exp-time {
+  font-weight: lighter;
+}
+
+#skills li {
+  color: blue;
 }
 
 /*# sourceMappingURL=maps/resume.css.map */
