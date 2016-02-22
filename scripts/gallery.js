@@ -35,12 +35,12 @@ var prepareGallery = function (galleryName, numImages) {
         psGallery.init();
     };
 
-    // Nullify galleryItems when window resizes, thus forcing it to be recomputed.
+    // Update galleryItems when window resizes
     var resizeTimeout;
     function resizeThrottler() {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(function () {
-        galleryItems = null;
+        galleryItems = parseGalleryElements(gallery);
       }, 250);
     }
     window.addEventListener("resize", resizeThrottler);
