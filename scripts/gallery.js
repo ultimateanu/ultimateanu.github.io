@@ -1,5 +1,4 @@
 var prepareGallery = function (galleryName, numImages) {
-    // TODO: update this as layout changes
     var parseGalleryElements = function (gallery) {
         var items = [];
         for (var i = 0; i < gallery.children.length; i++) {
@@ -18,6 +17,7 @@ var prepareGallery = function (galleryName, numImages) {
         return items;
     };
 
+    var galleryItems;
     var openPhotoSwipe = function (e) {
         galleryItems = galleryItems || parseGalleryElements(gallery);
         var getStartPos = function (index) {
@@ -34,6 +34,16 @@ var prepareGallery = function (galleryName, numImages) {
         var psGallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, galleryItems, options);
         psGallery.init();
     };
+
+    // Nullify galleryItems when window resizes, thus forcing it to be recomputed.
+    var resizeTimeout;
+    function resizeThrottler() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function () {
+        galleryItems = null;
+      }, 250);
+    }
+    window.addEventListener("resize", resizeThrottler);
 
     var createElem = function (type, className, innerText) {
         var elem = document.createElement(type);
@@ -71,7 +81,6 @@ var prepareGallery = function (galleryName, numImages) {
     }
 
     var gallery = createGalleryDOM();
-    var galleryItems;
     for (var i = 0; i < gallery.children.length; i++) {
         var item = gallery.children[i].children[0];
         item.dataset.index = i;
@@ -90,7 +99,6 @@ var makeJustifiedGallery = function () {
     });
 }
 
-// TODO: update on mobile rotation
 function htmlFullyLoaded(e) {
     prepareGallery('acro', 6);
     prepareGallery('korea', 5);
