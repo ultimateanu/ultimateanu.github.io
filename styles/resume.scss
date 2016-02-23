@@ -12,27 +12,40 @@
 }
 
 h1 {
+  margin-top: 1.5em;
   font-size: 3em;
   color: $primary-color-dark;
 }
 
-h2 {
-  font-size: 1.5em;
-}
-
 .exp {
   list-style-type: none;
+
+  h2 {
+    margin-top: 1.5em;
+    margin-bottom: .25em;
+    font-size: 1.25em;
+  }
 }
 
 .exp-job {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .exp-time {
   font-weight: lighter;
 }
 
+.exp-details {
+  margin-top: .75em;
+  list-style-type: square;
+  padding-left: 1.5em;
+
+  li {
+    margin-top: .5em;
+  }
+}
+
 #skills li {
-  color: blue;
+  color: green;
 }
