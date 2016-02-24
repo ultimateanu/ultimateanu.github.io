@@ -9,7 +9,7 @@
 
 #content {
   color: $text-color-dark;
-  margin: 0 $my-margin;
+  margin: 0 $my-padding;
   max-width: $content-width;
 }
 
@@ -82,7 +82,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   font-weight: 300;
-  padding: 0 $my-margin;
+  padding: 0 $my-padding;
   text-align: center;
   text-shadow: 2px 2px 3px black;
   line-height: 125%;
@@ -137,7 +137,7 @@ $icon-height: 75%;
 hr {
   border-color: $text-color-dark;
   border-width: 2px;
-  margin: (3*$my-margin) 0;
+  margin: (3*$my-padding) 0;
 }
 
 // --- Screens < 600px ---

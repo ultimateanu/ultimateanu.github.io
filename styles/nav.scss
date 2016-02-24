@@ -50,11 +50,11 @@ body {
   font-size: 18px;
   font-weight: 400;
   position: relative;
-  
+
   &:hover, &:focus {
     background-color: $accent-color-med;
   }
-  
+
   .nav-link-color-bar {
     position: absolute;
     top: 0;
@@ -68,7 +68,7 @@ body {
 .nav-link-light {
   @extend %nav-link;
   color: $primary-color-med;
-  
+
   &:hover, &:focus {
     color: $grey-light;
   }
@@ -103,7 +103,7 @@ body {
 
 #content {
   color: $text-color-dark;
-  margin: 0 $my-margin;
+  padding: 0 $my-padding;
   max-width: $content-width;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 #footer-dark {
-  @extend %footer-base;  
+  @extend %footer-base;
   background-color: $off-black;
 }
 
@@ -157,7 +157,7 @@ body {
 }
 
 .social-icon-black {
-  @extend .social-icon;  
+  @extend .social-icon;
   @include filter(invert(100%));
 }
 
