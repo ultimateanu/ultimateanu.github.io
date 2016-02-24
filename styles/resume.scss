@@ -13,7 +13,7 @@
 
 h1 {
   margin-top: 1.5em;
-  font-size: 3em;
+  font-size: 2em;
   color: $primary-color-dark;
 }
 
@@ -25,6 +25,13 @@ h1 {
     margin-bottom: .25em;
     font-size: 1.25em;
   }
+}
+
+.company-logo {
+  margin-top: 1.5em;
+  margin-bottom: .25em;
+  display: block;
+  height: 2em;
 }
 
 .exp-job {
