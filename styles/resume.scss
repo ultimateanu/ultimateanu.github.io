@@ -36,20 +36,30 @@ h1 {
 }
 
 .exp-job {
-  font-weight: bold;
   font-size: 1em;
 }
 
+// TODO: fix right justification
 .exp-time {
   font-weight: lighter;
+  background-color: lightgray;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  float: right;
 }
 
 .details {
   margin-top: .75em;
   list-style-type: square;
   padding-left: 1.5em;
+  font-weight: lighter;
 
   li {
     margin-top: .5em;
   }
+}
+
+.highlight {
+  background-color: $accent-color-dark;
 }
