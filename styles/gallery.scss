@@ -10,14 +10,14 @@
 .gallery-name {
     width: 50px;
     color: #9e9e9e;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Architects Daughter';
     font-size: 40px;
-    
+
     .rot {
         direction: rtl;
         transform: rotate(-90deg) translateY(-100%);
         transform-origin: top right;
-        padding: 0 5px 10px 0;
+        padding: 0 5px 10px $my-padding;
         transition: all 0.5s ease-in-out;
     }
 }
@@ -33,7 +33,7 @@
         margin-bottom: 0;
         margin-top: 30px;
     }
-    
+
     .gallery-name {
         width: auto;
         .rot {
