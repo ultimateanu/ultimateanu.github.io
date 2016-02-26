@@ -42,11 +42,13 @@ h1 {
 // TODO: fix right justification
 .exp-time {
   font-weight: lighter;
-  background-color: lightgray;
+  background-color: #9e9e9e;
   color: white;
   padding: 4px;
   border-radius: 4px;
   float: right;
+  font-size: .8em;
+  font-family: 'Droid Sans Mono', monospace;
 }
 
 .details {
