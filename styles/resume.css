@@ -142,6 +142,9 @@ h1 {
   #content {
     border-style: none;
   }
+  #postit {
+    display: none;
+  }
   .section-header {
     align-items: stretch;
     -webkit-align-items: stretch;

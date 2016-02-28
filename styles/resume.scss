@@ -144,6 +144,10 @@ h1 {
   border-style: none;
 }
 
+#postit {
+  display: none;
+}
+
 .section-header {
   @include align-items(stretch);
   margin: 60px 0 20px 0;
