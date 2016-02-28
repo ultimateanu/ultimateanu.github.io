@@ -1,4 +1,22 @@
+#postit {
+  position: absolute;
+  height: 200px;
+  width: 250px;
+  right: -450px;
+  top: 100px;
+  padding: 25px;
+  transform: rotate(7deg);
+  box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 90px 15px;
+  background: linear-gradient(to bottom right, #ffff88 60%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+  border-top: 50px solid #fdfd86;
+  font-family: 'Architects Daughter';
+  font-size: 36px;
+  text-align: center;
+}
+
 #content {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
