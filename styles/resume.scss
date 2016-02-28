@@ -1,6 +1,8 @@
 @import 'constants';
 @import 'flexbox';
 
+$left-section-width: 180px;
+
 #main {
   background-color: grey;
 }
@@ -13,19 +15,35 @@
   color: rgba(0, 0, 0, .87);
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+.section-header {
+  @include display-flex;
+  @include align-items(flex-end);
+  margin-bottom: 14px;
+}
+
+.color-line {
+  width: $left-section-width - $my-padding;
+  margin: 0 $my-padding 4px 0;
+  border-top-width: 4px;
+  border-top-color: $primary-color-med;
+}
+
 h1 {
-  margin: 1.5em 0 20px 0;
-  font-size: 2em;
+  font-size: 1.75em;
   color: $primary-color-med;
 }
 
 .item-container {
   @include display-flex;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .left {
-  @include flex-basis(180px);
+  @include flex-basis($left-section-width);
   @include display-flex;
   @include flex-direction(column);
   @include justify-content(center);
@@ -95,4 +113,35 @@ h1 {
 
 .highlight {
   background-color: $accent-color-dark;
+}
+
+// --- Screens < $content-width ---
+@media (max-width: $content-width) {
+
+.section-header {
+  @include align-items(stretch);
+  margin: 60px 0 20px 0;
+  @include flex-direction(column-reverse);
+}
+
+.color-line {
+  width: auto;
+  border-top: 1px solid #cccccc;
+  margin: 4px 0 0 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.item-container {
+  @include flex-direction(column);
+}
+
+.left {
+  @include flex-basis(auto);
+  margin-bottom: 12px;
+}
+
 }

@@ -10,16 +10,34 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+.section-header {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.color-line {
+  width: 168px;
+  margin: 0 12px 4px 0;
+  border-top-width: 4px;
+  border-top-color: #455a64;
+}
+
 h1 {
-  margin: 1.5em 0 20px 0;
-  font-size: 2em;
+  font-size: 1.75em;
   color: #455a64;
 }
 
 .item-container {
   display: flex;
   display: -webkit-flex;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .left {
@@ -98,6 +116,34 @@ h1 {
 
 .highlight {
   background-color: #ef6c00;
+}
+
+@media (max-width: 960px) {
+  .section-header {
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    margin: 60px 0 20px 0;
+    flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+  }
+  .color-line {
+    width: auto;
+    border-top: 1px solid #cccccc;
+    margin: 4px 0 0 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .item-container {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .left {
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    margin-bottom: 12px;
+  }
 }
 
 /*# sourceMappingURL=maps/resume.css.map */
