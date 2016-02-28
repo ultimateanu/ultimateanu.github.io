@@ -111,8 +111,6 @@ body {
   color: #202020;
   padding: 0 12px;
   width: 936px;
-  border-left: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
 }
 
 #footer-dark, #footer-light {
