@@ -16,7 +16,6 @@ body {
 
 // --- HEADER ---
 %nav-header {
-  @include centerWhenScrollBar;
   @include display-flex;
   @include justify-content(center);
   text-align: center;
@@ -84,7 +83,6 @@ body {
 
 // --- MAIN ---
 #main {
-  @include centerWhenScrollBar;
   @include flex-grow(1);
   @include display-flex;
   @include justify-content(center);
@@ -113,7 +111,6 @@ body {
 
 // --- FOOTER ---
 %footer-base {
-  @include centerWhenScrollBar;
   @include display-flex;
   color: grey;
   font-family: 'Hind';
