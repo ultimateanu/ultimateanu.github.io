@@ -11,9 +11,31 @@
 }
 
 h1 {
-  margin: 1.5em 0 .5em 0;
+  margin: 1.5em 0 20px 0;
   font-size: 2em;
   color: #455a64;
+}
+
+.item-container {
+  display: flex;
+  display: -webkit-flex;
+  margin-bottom: 60px;
+}
+
+.left {
+  flex-basis: 180px;
+  -webkit-flex-basis: 180px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.right {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
 }
 
 .exp {
@@ -34,12 +56,15 @@ h1 {
 
 .exp-job {
   font-size: 1em;
-  margin-top: 6px;
 }
 
-.exp-loc {
+.exp-loc, .edu-loc {
   font-size: .8em;
   color: rgba(0, 0, 0, 0.54);
+}
+
+.edu-loc {
+  padding-left: 29px;
 }
 
 .exp-time {
@@ -51,10 +76,11 @@ h1 {
   float: right;
   font-size: .8em;
   font-family: 'Droid Sans Mono';
+  width: 110px;
+  text-align: center;
 }
 
 .details {
-  margin: .75em 0 1.75em 0;
   list-style-type: square;
   padding-left: 1.5em;
   font-weight: lighter;
