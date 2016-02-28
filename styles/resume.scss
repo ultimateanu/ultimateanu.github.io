@@ -3,6 +3,10 @@
 
 $left-section-width: 180px;
 
+body {
+  overflow-x: hidden;
+}
+
 #postit {
   position: absolute;
   height: 200px;
