@@ -105,6 +105,8 @@ body {
   color: $text-color-dark;
   padding: 0 $my-padding;
   width: $content-width - 2*$my-padding; // Since it has padding on each size
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 }
 
 

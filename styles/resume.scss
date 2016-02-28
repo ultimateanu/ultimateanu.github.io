@@ -3,10 +3,6 @@
 
 $left-section-width: 180px;
 
-#main {
-  background-color: grey;
-}
-
 #content {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -117,6 +113,10 @@ h1 {
 
 // --- Screens < $content-width ---
 @media (max-width: $content-width) {
+
+#content {
+  border-style: none;
+}
 
 .section-header {
   @include align-items(stretch);
