@@ -14,6 +14,10 @@ body {
   background-image: url('../images/bg_square.png');  // Background pattern from subtlepatterns.com
 }
 
+#wood-bg {
+  background-image: url('../images/bg_wood.png');  // Background pattern from subtlepatterns.com
+}
+
 // --- HEADER ---
 %nav-header {
   @include display-flex;

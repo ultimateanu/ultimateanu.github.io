@@ -11,6 +11,10 @@ body {
   background-image: url("../images/bg_square.png");
 }
 
+#wood-bg {
+  background-image: url("../images/bg_wood.png");
+}
+
 .nav-header-light, .nav-header-dark {
   display: flex;
   display: -webkit-flex;
