@@ -5,3 +5,7 @@
   -webkit-filter: $f;
   filter: $f;
 }
+
+@mixin centerWhenScrollBar() {
+  padding-left: calc(100vw - 100%);    // Determines the width of the scrollbar
+}

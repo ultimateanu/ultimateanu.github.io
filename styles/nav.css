@@ -12,6 +12,7 @@ body {
 }
 
 .nav-header-light, .nav-header-dark {
+  padding-left: calc(100vw - 100%);
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -86,6 +87,7 @@ body {
 }
 
 #main {
+  padding-left: calc(100vw - 100%);
   flex-grow: 1;
   -webkit-flex-grow: 1;
   display: flex;
@@ -114,6 +116,7 @@ body {
 }
 
 #footer-dark, #footer-light {
+  padding-left: calc(100vw - 100%);
   display: flex;
   display: -webkit-flex;
   color: grey;
