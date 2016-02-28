@@ -35,6 +35,11 @@ h1 {
   @include flex-grow(1);
 }
 
+.detail-header {
+  @include display-flex;
+  @include justify-content(space-between);
+}
+
 .exp {
   list-style-type: none;
 
@@ -72,7 +77,6 @@ h1 {
   color: white;
   padding: 4px;
   border-radius: 4px;
-  float: right;
   font-size: .8em;
   font-family: 'Droid Sans Mono';
   width: 110px;
