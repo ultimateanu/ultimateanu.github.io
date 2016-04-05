@@ -90,7 +90,7 @@ h1 {
   font-weight: 300;
   padding: 0 12px;
   text-align: center;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 2px black;
   line-height: 125%;
 }
 
@@ -168,6 +168,10 @@ hr {
   }
   .course:hover > .course-name, .course:focus > .course-name {
     display: flex;
+  }
+  .course-name-text {
+    font-size: 24px;
+    font-weight: 400;
   }
   .course-bg-img {
     -webkit-filter: none;
