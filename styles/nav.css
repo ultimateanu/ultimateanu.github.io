@@ -180,6 +180,14 @@ body {
   .nav-link-color-bar {
     display: none;
   }
+  .nav-header-middle {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .nav-link-light, .nav-link-dark {
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+  }
   #footer-dark, #footer-light {
     flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;

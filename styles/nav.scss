@@ -172,6 +172,14 @@ body {
     display: none;
   }
 
+  .nav-header-middle {
+    @include flex-direction(column);
+  }
+
+  %nav-link {
+    @include flex-basis(auto);
+  }
+
   %footer-base {
     @include flex-direction(column-reverse);
     height: 120px;
