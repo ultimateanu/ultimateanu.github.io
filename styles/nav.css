@@ -65,8 +65,8 @@ body {
 
 .nav-link-light, .nav-link-dark {
   height: 44px;
-  flex-basis: 150px;
-  -webkit-flex-basis: 150px;
+  flex-basis: 140px;
+  -webkit-flex-basis: 140px;
   flex-grow: 1;
   -webkit-flex-grow: 1;
   display: flex;

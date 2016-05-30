@@ -65,7 +65,8 @@ body {
 
 %nav-link {
   height: $nav-bar-height;
-  @include flex-basis(150px);
+  // Slightly smaller than 1/x of mobile width to prevent wrapping around
+  @include flex-basis($mobile-width-cutoff/4-10);
   @include flex-grow(1);
   @include flex-center-children;
   text-decoration: none;
