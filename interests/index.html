@@ -1,148 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400%7COpen+Sans:400,300,600%7CHind:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../styles/reset.css"/>
-  <link rel="stylesheet" href="../styles/nav.css"/>
-  <link rel="stylesheet" href="../styles/interests.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400%7COpen+Sans:400,300,600%7CHind:400,300' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/nav.css" />
+  <link rel="stylesheet" href="../styles/interests.css" />
+  <script type="text/javascript" src="../scripts/common.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Interests | Anu Bandi</title>
 </head>
 
 <body id="tile-bg">
-  <header class="nav-header-dark">
+  <div id="mobile-header">
+    <button id="menu-button"> &#8801; </button>
+  </div>
+  <header id="nav-menu" class="nav-header-dark">
     <nav class="nav-header-middle">
       <a href="/interests" class="nav-link-dark">
         <div class="nav-link-color-bar"></div>INTERESTS
       </a>
-      <a href="/gallery" class="nav-link-dark">GALLERY</a> 
+      <a href="/gallery" class="nav-link-dark">GALLERY</a>
       <a href="/projects" class="nav-link-dark">PROJECTS</a>
       <a href="/resume" class="nav-link-dark">RESUME</a>
     </nav>
   </header>
 
-  <div id="main"><div id="content">
+  <div id="main">
+    <div id="content">
 
-    <div class="text-block">
-      <h1> courses </h1>
-      <p class="text">I like taking online classes (MOOC).</p>
+      <div class="text-block">
+        <h1> courses </h1>
+        <p class="text">I like taking online classes (MOOC).</p>
+      </div>
+
+      <ul id="course-list">
+        <li class="course">
+          <img class="course-bg-img" src="../images/parthenon.jpg">
+          <img class="course-cert-img" src="../images/cert_greek_myth.png">
+          <div class="course-name">
+            <p class="course-name-text">Greek and Roman Mythology</p>
+          </div>
+          <div class="course-links">
+            <a href="https://www.coursera.org/course/mythology" class="course-weblink" target="_blank">
+              <div class="info-icon"></div>
+            </a>
+            <div class="divider-space"></div>
+            <a href="https://www.coursera.org/account/accomplishments/records/gSS4387hHf9fkKqD" class="course-weblink" target="_blank">
+              <div class="grad-icon"></div>
+            </a>
+          </div>
+        </li>
+
+        <li class="course">
+          <img class="course-bg-img" src="../images/spark_big_data.png">
+          <img class="course-cert-img" src="../images/cert_spark_big_data.png">
+          <div class="course-name">
+            <p class="course-name-text">Big Data with Apache Spark</p>
+          </div>
+          <div class="course-links">
+            <a href="https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x" class="course-weblink" target="_blank">
+              <div class="info-icon"></div>
+            </a>
+            <div class="divider-space"></div>
+            <a href="https://verify.edx.org/cert/a5b89a9808644a7fbca4fc3a3fd2aebd" class="course-weblink" target="_blank">
+              <div class="grad-icon"></div>
+            </a>
+          </div>
+        </li>
+
+        <li class="course">
+          <img class="course-bg-img" src="../images/spark_ml.png">
+          <img class="course-cert-img" src="../images/cert_spark_ml.png">
+          <div class="course-name">
+            <p class="course-name-text">Scalable Machine Learning</p>
+          </div>
+          <div class="course-links">
+            <a href="https://www.edx.org/course/scalable-machine-learning-uc-berkeleyx-cs190-1x" class="course-weblink" target="_blank">
+              <div class="info-icon"></div>
+            </a>
+            <div class="divider-space"></div>
+            <a href="https://verify.edx.org/cert/fc1d8da5768240c29ed4e5ae8e831e21" class="course-weblink" target="_blank">
+              <div class="grad-icon"></div>
+            </a>
+          </div>
+        </li>
+
+        <li class="course">
+          <img class="course-bg-img" src="../images/cryptography.png">
+          <img class="course-cert-img" src="../images/cert_crypto_1.png">
+          <div class="course-name">
+            <p class="course-name-text">Cryptography I</p>
+          </div>
+          <div class="course-links">
+            <a href="https://www.coursera.org/course/crypto" class="course-weblink" target="_blank">
+              <div class="info-icon"></div>
+            </a>
+            <div class="divider-space"></div>
+            <a href="../assets/crypto_1.pdf" class="course-weblink" target="_blank">
+              <div class="grad-icon"></div>
+            </a>
+          </div>
+        </li>
+
+        <li class="course">
+          <img class="course-bg-img" src="../images/chinese_thought_1.png">
+          <img class="course-cert-img" src="../images/cert_chinese_1.png">
+          <div class="course-name">
+            <p class="course-name-text">Chinese Thought I</p>
+          </div>
+          <div class="course-links">
+            <a href="https://www.edx.org/course/chinese-thought-ancient-wisdom-meets-ubcx-china300-1x" class="course-weblink" target="_blank">
+              <div class="info-icon"></div>
+            </a>
+            <div class="divider-space"></div>
+            <a href="https://courses.edx.org/certificates/user/5250622/course/course-v1:UBCx+China300.1x+3T2015" class="course-weblink"
+              target="_blank">
+              <div class="grad-icon"></div>
+            </a>
+          </div>
+        </li>
+
+        <li class="course">
+          <img class="course-bg-img" src="../images/chinese_thought_2.png">
+          <img class="course-cert-img" src="../images/cert_chinese_2.png">
+          <div class="course-name">
+            <p class="course-name-text">Chinese Thought II</p>
+          </div>
+          <div class="course-links">
+            <a href="https://www.edx.org/course/chinese-thought-ancient-wisdom-meets-ubcx-china300-2x" class="course-weblink" target="_blank">
+              <div class="info-icon"></div>
+            </a>
+            <div class="divider-space"></div>
+            <a href="https://courses.edx.org/certificates/user/5250622/course/course-v1:UBCx+China300.2x+3T2015" class="course-weblink"
+              target="_blank">
+              <div class="grad-icon"></div>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <hr>
+
+      <div class="text-block">
+        <h1> acroyoga </h1>
+        <!-- TODO: Expand more on this -->
+        <p class="text">I love acroyoga!</p>
+        <br><br>
+      </div>
+
     </div>
-
-    <ul id="course-list">
-      <li class="course">
-        <img class="course-bg-img" src="../images/parthenon.jpg">
-        <img class="course-cert-img" src="../images/cert_greek_myth.png">
-        <div class="course-name">
-          <p class="course-name-text">Greek and Roman Mythology</p>
-        </div>
-        <div class="course-links">
-          <a href="https://www.coursera.org/course/mythology" class="course-weblink" target="_blank">
-            <div class="info-icon"></div>
-          </a>
-          <div class="divider-space"></div>
-          <a href="https://www.coursera.org/account/accomplishments/records/gSS4387hHf9fkKqD" class="course-weblink" target="_blank">
-            <div class="grad-icon"></div>
-          </a>
-        </div>
-      </li>
-
-      <li class="course">
-        <img class="course-bg-img" src="../images/spark_big_data.png">
-        <img class="course-cert-img" src="../images/cert_spark_big_data.png">
-        <div class="course-name">
-          <p class="course-name-text">Big Data with Apache Spark</p>
-        </div>
-        <div class="course-links">
-          <a href="https://www.edx.org/course/introduction-big-data-apache-spark-uc-berkeleyx-cs100-1x" class="course-weblink" target="_blank">
-            <div class="info-icon"></div>
-          </a>
-          <div class="divider-space"></div>
-          <a href="https://verify.edx.org/cert/a5b89a9808644a7fbca4fc3a3fd2aebd" class="course-weblink" target="_blank">
-            <div class="grad-icon"></div>
-          </a>
-        </div>
-      </li>
-
-      <li class="course">
-        <img class="course-bg-img" src="../images/spark_ml.png">
-        <img class="course-cert-img" src="../images/cert_spark_ml.png">
-        <div class="course-name">
-          <p class="course-name-text">Scalable Machine Learning</p>
-        </div>
-        <div class="course-links">
-          <a href="https://www.edx.org/course/scalable-machine-learning-uc-berkeleyx-cs190-1x" class="course-weblink" target="_blank">
-            <div class="info-icon"></div>
-          </a>
-          <div class="divider-space"></div>
-          <a href="https://verify.edx.org/cert/fc1d8da5768240c29ed4e5ae8e831e21" class="course-weblink" target="_blank">
-            <div class="grad-icon"></div>
-          </a>
-        </div>
-      </li>
-
-      <li class="course">
-        <img class="course-bg-img" src="../images/cryptography.png">
-        <img class="course-cert-img" src="../images/cert_crypto_1.png">
-        <div class="course-name">
-          <p class="course-name-text">Cryptography I</p>
-        </div>
-        <div class="course-links">
-          <a href="https://www.coursera.org/course/crypto" class="course-weblink" target="_blank">
-            <div class="info-icon"></div>
-          </a>
-          <div class="divider-space"></div>
-          <a href="../assets/crypto_1.pdf" class="course-weblink" target="_blank">
-            <div class="grad-icon"></div>
-          </a>
-        </div>
-      </li>
-
-      <li class="course">
-        <img class="course-bg-img" src="../images/chinese_thought_1.png">
-        <img class="course-cert-img" src="../images/cert_chinese_1.png">
-        <div class="course-name">
-          <p class="course-name-text">Chinese Thought I</p>
-        </div>
-        <div class="course-links">
-          <a href="https://www.edx.org/course/chinese-thought-ancient-wisdom-meets-ubcx-china300-1x" class="course-weblink" target="_blank">
-            <div class="info-icon"></div>
-          </a>
-          <div class="divider-space"></div>
-          <a href="https://courses.edx.org/certificates/user/5250622/course/course-v1:UBCx+China300.1x+3T2015" class="course-weblink" target="_blank">
-            <div class="grad-icon"></div>
-          </a>
-        </div>
-      </li>
-
-      <li class="course">
-        <img class="course-bg-img" src="../images/chinese_thought_2.png">
-        <img class="course-cert-img" src="../images/cert_chinese_2.png">
-        <div class="course-name">
-          <p class="course-name-text">Chinese Thought II</p>
-        </div>
-        <div class="course-links">
-          <a href="https://www.edx.org/course/chinese-thought-ancient-wisdom-meets-ubcx-china300-2x" class="course-weblink" target="_blank">
-            <div class="info-icon"></div>
-          </a>
-          <div class="divider-space"></div>
-          <a href="https://courses.edx.org/certificates/user/5250622/course/course-v1:UBCx+China300.2x+3T2015" class="course-weblink" target="_blank">
-            <div class="grad-icon"></div>
-          </a>
-        </div>
-      </li>
-    </ul>
-
-    <hr>
-
-    <div class="text-block">
-      <h1> acroyoga </h1>
-      <!-- TODO: Expand more on this -->
-      <p class="text">I love acroyoga!</p>
-      <br><br>
-    </div>
-
-  </div></div>
+  </div>
 
   <footer id="footer-dark">
     <div id="footer-left"></div>
@@ -151,16 +161,17 @@
     </div>
     <div id="footer-right">
       <a class="social-link" href="mailto:anu@ultimateanu.com">
-        <img class="social-icon" src="../images/icon_email.svg" alt="email icon"/>
+        <img class="social-icon" src="../images/icon_email.svg" alt="email icon" />
       </a>
       <a class="social-link" href="https://www.linkedin.com/in/ultimateanu">
-        <img class="social-icon" src="../images/icon_linkedin.svg" alt="linkedin icon"/>
+        <img class="social-icon" src="../images/icon_linkedin.svg" alt="linkedin icon" />
       </a>
       <a class="social-link" href="https://instagram.com/anubandi/">
-        <img class="social-icon" src="../images/icon_instagram.svg" alt="instagram icon"/>
+        <img class="social-icon" src="../images/icon_instagram.svg" alt="instagram icon" />
       </a>
     </div>
   </footer>
 
 </body>
+
 </html>

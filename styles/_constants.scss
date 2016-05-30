@@ -1,9 +1,15 @@
 // --- SITE-WIDE CONSTANTS ---
 
+$mobile-nav-bar-height: 60px;
+$nav-bar-height: 44px;
+
 $content-width: 960px;
 $content-padding: 15px;
 $my-padding: 12px;
 $text-color-dark: #202020;
+
+// mobile
+$mobile-width-cutoff: 600px;
 
 // color palette
 $primary-color-dark: #263238;

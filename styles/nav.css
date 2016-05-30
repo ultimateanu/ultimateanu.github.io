@@ -15,6 +15,24 @@ body {
   background-image: url("../images/bg_wood.png");
 }
 
+#mobile-header {
+  height: 60px;
+  background-color: grey;
+  display: none;
+}
+
+#menu-button {
+  height: 30px;
+  width: 30px;
+  background: inherit;
+  border: 1px solid red;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
 .nav-header-light, .nav-header-dark {
   display: flex;
   display: -webkit-flex;
@@ -177,6 +195,12 @@ body {
 }
 
 @media (max-width: 600px) {
+  #mobile-header {
+    display: block;
+  }
+  #nav-menu {
+    display: none;
+  }
   .nav-link-color-bar {
     display: none;
   }

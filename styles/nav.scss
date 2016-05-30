@@ -18,6 +18,25 @@ body {
   background-image: url('../images/bg_wood.png');  // Background pattern from subtlepatterns.com
 }
 
+// --- MOBILE HEADER ---
+#mobile-header {
+  height: $mobile-nav-bar-height;
+  background-color: grey;
+  display: none;
+}
+
+#menu-button {
+  height: 30px;
+  width:  30px;
+  background: inherit;
+  border: 1px solid red;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
 // --- HEADER ---
 %nav-header {
   @include display-flex;
@@ -45,7 +64,7 @@ body {
 }
 
 %nav-link {
-  height: 44px;
+  height: $nav-bar-height;
   @include flex-basis(150px);
   @include flex-grow(1);
   @include flex-center-children;
@@ -165,9 +184,16 @@ body {
   @include filter(invert(100%));
 }
 
+// --- Mobile Version ---
+@media (max-width:$mobile-width-cutoff) {
+  #mobile-header {
+    display: block;
+  }
 
-// --- Screens < 600px ---
-@media (max-width:600px) {
+  #nav-menu {
+    display: none;
+  }
+
   .nav-link-color-bar {
     display: none;
   }
