@@ -25,16 +25,14 @@ body {
   display: none;
 }
 
-#menu-button {
-  height: 30px;
-  width:  30px;
-  background: inherit;
-  border: 1px solid red;
+$menu-fraction: 0.5;
+#menu-icon {
+  height: $mobile-nav-bar-height * $menu-fraction;
+  width: $mobile-nav-bar-height * $menu-fraction;
+  padding: ($mobile-nav-bar-height * (1-$menu-fraction)/2);
   position: absolute;
-  right: 10px;
-  text-align: center;
-  font-size: 20px;
-  color: white;
+  right: 0px;
+  cursor: pointer;
 }
 
 // --- HEADER ---

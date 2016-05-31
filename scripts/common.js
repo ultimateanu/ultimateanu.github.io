@@ -18,5 +18,5 @@ function pageResized(event) {
 }
 
 // Event listeners
-document.getElementById('menu-button').addEventListener("click", toggleNavMenu);
-window.addEventListener('resize', pageResizedddd);
+document.getElementById('menu-icon').addEventListener("click", toggleNavMenu);
+window.addEventListener('resize', pageResized);
