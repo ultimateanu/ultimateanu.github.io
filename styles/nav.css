@@ -215,6 +215,7 @@ body {
   .nav-link-light, .nav-link-dark {
     flex-basis: auto;
     -webkit-flex-basis: auto;
+    border-top: 1px solid #263238;
   }
   #footer-dark, #footer-light {
     flex-direction: column-reverse;
