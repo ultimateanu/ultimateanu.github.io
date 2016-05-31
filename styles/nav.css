@@ -17,8 +17,15 @@ body {
 
 #mobile-header {
   height: 60px;
-  background-color: grey;
   display: none;
+}
+
+.light-theme {
+  background-color: #fafafa;
+}
+
+.dark-theme {
+  background-color: #455a64;
 }
 
 #menu-icon {

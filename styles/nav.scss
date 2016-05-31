@@ -21,8 +21,15 @@ body {
 // --- MOBILE HEADER ---
 #mobile-header {
   height: $mobile-nav-bar-height;
-  background-color: grey;
   display: none;
+}
+
+.light-theme {
+  background-color: $grey-light;
+}
+
+.dark-theme {
+  background-color: $primary-color-med;
 }
 
 $menu-fraction: 0.5;
