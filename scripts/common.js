@@ -10,7 +10,7 @@ function toggleNavMenu(event) {
 }
 
 function pageResized(event) {
-  if (window.innerWidth > 620) {
+  if (window.innerWidth > 600) {
     navMenu.style.display = 'flex';
   } else {
     navMenu.style.display = 'none';
