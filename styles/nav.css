@@ -111,6 +111,12 @@ body {
   color: white;
 }
 
+.nav-link-current {
+  height: 36px;
+  border-top: 4px solid #f57c00;
+  padding-bottom: 4px;
+}
+
 #main {
   flex-grow: 1;
   -webkit-flex-grow: 1;
@@ -215,7 +221,14 @@ body {
   .nav-link-light, .nav-link-dark {
     flex-basis: auto;
     -webkit-flex-basis: auto;
-    border-top: 1px solid #263238;
+    box-shadow: 0 -1px 0 #263238;
+  }
+  .nav-link-current {
+    height: 44px;
+    border-top-style: none;
+    padding-bottom: 0;
+    border-left: 4px solid #f57c00;
+    padding-right: 4px;
   }
   #footer-dark, #footer-light {
     flex-direction: column-reverse;

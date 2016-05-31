@@ -108,6 +108,11 @@ $menu-fraction: 0.5;
   color: white;
 }
 
+.nav-link-current {
+  height: $nav-bar-height - (2 * $nav-color-bar-width);
+  border-top: $nav-color-bar-width solid $accent-color-med;
+  padding-bottom: $nav-color-bar-width;
+}
 
 
 // --- MAIN ---
@@ -210,7 +215,16 @@ $menu-fraction: 0.5;
 
   %nav-link {
     @include flex-basis(auto);
-    border-top: 1px solid $primary-color-dark;
+    box-shadow: 0 -1px 0 $primary-color-dark;
+  }
+
+  .nav-link-current {
+    height: $nav-bar-height;
+    border-top-style: none;
+    padding-bottom: 0;
+
+    border-left: $nav-color-bar-width solid $accent-color-med;
+    padding-right: $nav-color-bar-width;
   }
 
   %footer-base {
