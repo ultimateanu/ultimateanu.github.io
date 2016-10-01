@@ -11,6 +11,9 @@
   color: $text-color-dark;
   margin: 0 $my-padding;
   max-width: $content-width;
+  background-color: white;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 }
 
 .text-block {

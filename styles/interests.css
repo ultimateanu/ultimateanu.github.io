@@ -9,6 +9,9 @@
   color: #202020;
   margin: 0 12px;
   max-width: 960px;
+  background-color: white;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 }
 
 .text-block {
