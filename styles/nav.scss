@@ -124,7 +124,7 @@ $menu-fraction: 0.5;
 
 #gallery {
   @include flex-grow(1);
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   padding-bottom: 100px;
 }
 

@@ -129,7 +129,7 @@ body {
 #gallery {
   flex-grow: 1;
   -webkit-flex-grow: 1;
-  background-color: black;
+  background-color: #181818;
   padding-bottom: 100px;
 }
 
