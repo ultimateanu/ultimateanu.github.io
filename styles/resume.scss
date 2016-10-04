@@ -1,6 +1,7 @@
 @import 'constants';
 @import 'flexbox';
 
+$first-name-width: 150px;
 $left-section-width: 180px;
 
 html, body {
@@ -47,9 +48,47 @@ section {
   margin-bottom: 14px;
 }
 
+#name-container {
+  @include display-flex;
+  @include align-items(center);
+  margin: 30px 0;
+}
+.name-left {
+  @include flex-basis($left-section-width);
+}
+.name-middle {
+  @include flex-grow(1);
+}
+#name-hr {
+  margin: 0 0 30px 0;
+}
+
+%resume-name-base {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 91.5px;
+  letter-spacing: -3px;
+}
+#resume-first-name {
+  @extend %resume-name-base;
+  font-weight: 700;
+  color: #424242;
+}
+#resume-last-name {
+  @extend %resume-name-base;
+  font-weight: 300;
+  color: #616161;
+  margin-left: -4px;  // HACK: makes the font line up.
+}
+
+#face-profile {
+  max-width: 180px;
+  border-radius: 50%;
+  border: 1px solid #E0E0E0;
+}
+
 .color-line {
-  width: $left-section-width - $my-padding;
-  margin: 0 $my-padding 4px 0;
+  width: $first-name-width;
+  margin: 0 ($left-section-width - $first-name-width) 4px 0;
   border-top-width: 4px;
   border-top-color: $primary-color-med;
 }
