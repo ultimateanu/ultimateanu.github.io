@@ -96,7 +96,7 @@ h1 {
 .item-container {
   display: flex;
   display: -webkit-flex;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 
 .left {

@@ -95,7 +95,7 @@ h1 {
 
 .item-container {
   @include display-flex;
-  margin-bottom: 50px;
+  margin-bottom: 2*$my-padding;
 }
 
 .left {
