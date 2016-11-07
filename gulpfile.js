@@ -50,7 +50,7 @@ gulp.task('build', gulp.series(
 ));
 
 // EXPORT
-gulp.task('export', gulp.series('build',
+gulp.task('export', gulp.series('build', 'sass',
     () => {
         return gulp.src('build/**')
             .pipe(zip('website.zip'))
