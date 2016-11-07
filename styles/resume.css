@@ -47,7 +47,7 @@ section {
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .name-left {
@@ -61,7 +61,7 @@ section {
 }
 
 #name-hr {
-  margin: 12px 0 25px 0;
+  margin: 12px 0 50px 0;
 }
 
 #resume-first-name, #resume-last-name {

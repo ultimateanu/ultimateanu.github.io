@@ -52,7 +52,7 @@ section {
 #name-container {
   @include display-flex;
   @include align-items(center);
-  margin-top: 1.5*$content-side-padding;
+  margin-top: $content-side-padding;
 }
 .name-left {
   @include flex-basis($left-section-width);
@@ -61,7 +61,7 @@ section {
   @include flex-grow(1);
 }
 #name-hr {
-  margin: $my-padding 0 ($section-spacing/2) 0;
+  margin: $my-padding 0 $section-spacing 0;
 }
 
 %resume-name-base {
