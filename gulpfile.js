@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create(),
     del = require('del');
 
 // Tasks
-gulp.task('sass', function () {
+gulp.task('sass', function() {
     return gulp.src('build/styles/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "build/"
@@ -24,19 +24,20 @@ gulp.task('browser-sync', function () {
 });
 
 // Watch tasks
-gulp.task('watch', function () {
-    gulp.watch('build/scripts/*.js').on('change', browserSync.reload);
-    gulp.watch('build/**/*.html').on('change', browserSync.reload);
-    gulp.watch('build/styles/**/*.scss', ['sass']);
+gulp.task('watch', function() {
+    // TODO: Add task to copy file to build when it changes.
+    gulp.watch('build/scripts/*.js').on('change', gulp.series(browserSync.reload));
+    gulp.watch('build/**/*.html').on('change', gulp.series(browserSync.reload));
+    gulp.watch('build/styles/**/*.scss', gulp.series('sass'));
 });
 
 // BUILD
-gulp.task('build:clean', function () {
+gulp.task('build:clean', function() {
     return del([
         'build/**'
     ])
 });
-gulp.task('build:copy', function () {
+gulp.task('build:copy', function() {
     gulp.src('./bower_components/**')
         .pipe(gulp.dest('build/bower_components/'));
     return gulp.src('src/**')
@@ -48,4 +49,4 @@ gulp.task('build', gulp.series(
 ));
 
 // Default task
-gulp.task('default', gulp.series('build', 'sass', 'browser-sync', 'watch'));
+gulp.task('default', gulp.series('build', gulp.parallel('sass', 'browser-sync', 'watch')));
