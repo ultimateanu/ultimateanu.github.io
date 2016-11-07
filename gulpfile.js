@@ -52,7 +52,7 @@ gulp.task('build', gulp.series(
 // EXPORT
 gulp.task('export', gulp.series('build',
     () => {
-        return gulp.src('build/*')
+        return gulp.src('build/**')
             .pipe(zip('website.zip'))
             .pipe(gulp.dest('./'));
     }
