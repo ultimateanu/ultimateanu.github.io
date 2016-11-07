@@ -89,5 +89,6 @@ bower_components
 /images/acro/*
 /images/gallery/*
 *.js.map
+*.zip
 /src/images/gallery/
 /build/

@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create(),
     del = require('del');
+const zip = require('gulp-zip');
 
 // Tasks
 gulp.task('sass', function() {
@@ -46,6 +47,15 @@ gulp.task('build:copy', function() {
 gulp.task('build', gulp.series(
     'build:clean',
     'build:copy'
+));
+
+// EXPORT
+gulp.task('export', gulp.series('build',
+    () => {
+        return gulp.src('build/*')
+            .pipe(zip('website.zip'))
+            .pipe(gulp.dest('./'));
+    }
 ));
 
 // Default task
